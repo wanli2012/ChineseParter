@@ -10,8 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GLBusiness_HomeController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GLBusiness_PreferredController">
             <connections>
+                <outlet property="tableView" destination="McD-eB-SA0" id="0xE-08-5MC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="502"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgZ-9O-Ynw">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgZ-9O-Ynw" userLabel="topView">
                     <rect key="frame" x="0.0" y="64" width="375" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fm-4A-tFO">
@@ -72,11 +73,23 @@
                         <constraint firstItem="2fm-4A-tFO" firstAttribute="width" secondItem="xgZ-9O-Ynw" secondAttribute="width" multiplier="1/3" id="yIC-ZO-g3R"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="McD-eB-SA0">
+                    <rect key="frame" x="0.0" y="114" width="375" height="388"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Z5i-Xr-Hr1"/>
+                        <outlet property="delegate" destination="-1" id="9qD-Jm-fot"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="McD-eB-SA0" secondAttribute="bottom" id="4KT-b0-ISp"/>
+                <constraint firstAttribute="trailing" secondItem="McD-eB-SA0" secondAttribute="trailing" id="H7S-Ox-Uhv"/>
                 <constraint firstItem="xgZ-9O-Ynw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Sg4-i5-Etv"/>
+                <constraint firstItem="McD-eB-SA0" firstAttribute="top" secondItem="xgZ-9O-Ynw" secondAttribute="bottom" id="qAH-0A-SjO"/>
                 <constraint firstItem="xgZ-9O-Ynw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qLI-zx-TBQ"/>
+                <constraint firstItem="McD-eB-SA0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qyG-BJ-uVP"/>
                 <constraint firstAttribute="trailing" secondItem="xgZ-9O-Ynw" secondAttribute="trailing" id="uzE-XJ-lFg"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

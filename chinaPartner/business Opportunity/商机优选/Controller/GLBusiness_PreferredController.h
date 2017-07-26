@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GLBusiness_HomeController : UIViewController
+@interface GLBusiness_PreferredController : UIViewController
 
 @end
