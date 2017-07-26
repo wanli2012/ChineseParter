@@ -13,6 +13,10 @@
 		F946F59A1F287DCC0091A503 /* GLBusiness_DetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F946F5941F287DCC0091A503 /* GLBusiness_DetailController.xib */; };
 		F946F59B1F287DCC0091A503 /* GLBusiness_DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F946F5971F287DCC0091A503 /* GLBusiness_DetailCell.m */; };
 		F946F59C1F287DCC0091A503 /* GLBusiness_DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F946F5981F287DCC0091A503 /* GLBusiness_DetailCell.xib */; };
+		F946F5A11F2883EB0091A503 /* LBAddNewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946F59F1F2883EB0091A503 /* LBAddNewProjectViewController.swift */; };
+		F946F5A21F2883EB0091A503 /* LBAddNewProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F946F5A01F2883EB0091A503 /* LBAddNewProjectViewController.xib */; };
+		F946F5A51F2892350091A503 /* LBEssentialInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946F5A31F2892350091A503 /* LBEssentialInformationViewController.swift */; };
+		F946F5A61F2892350091A503 /* LBEssentialInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F946F5A41F2892350091A503 /* LBEssentialInformationViewController.xib */; };
 		F95AE2EA1F258E4300946B37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F95AE2E91F258E4300946B37 /* main.m */; };
 		F95AE2ED1F258E4300946B37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F95AE2EC1F258E4300946B37 /* AppDelegate.m */; };
 		F95AE2F01F258E4300946B37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95AE2EF1F258E4300946B37 /* ViewController.m */; };
@@ -80,6 +84,10 @@
 		F946F5961F287DCC0091A503 /* GLBusiness_DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBusiness_DetailCell.h; sourceTree = "<group>"; };
 		F946F5971F287DCC0091A503 /* GLBusiness_DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBusiness_DetailCell.m; sourceTree = "<group>"; };
 		F946F5981F287DCC0091A503 /* GLBusiness_DetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLBusiness_DetailCell.xib; sourceTree = "<group>"; };
+		F946F59F1F2883EB0091A503 /* LBAddNewProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBAddNewProjectViewController.swift; sourceTree = "<group>"; };
+		F946F5A01F2883EB0091A503 /* LBAddNewProjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBAddNewProjectViewController.xib; sourceTree = "<group>"; };
+		F946F5A31F2892350091A503 /* LBEssentialInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBEssentialInformationViewController.swift; sourceTree = "<group>"; };
+		F946F5A41F2892350091A503 /* LBEssentialInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBEssentialInformationViewController.xib; sourceTree = "<group>"; };
 		F95AE2E51F258E4300946B37 /* chinaPartner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chinaPartner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95AE2E91F258E4300946B37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F95AE2EB1F258E4300946B37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +193,20 @@
 				F946F5981F287DCC0091A503 /* GLBusiness_DetailCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F946F59D1F2880FE0091A503 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F946F59E1F2880FE0091A503 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		F95AE2DC1F258E4300946B37 = {
@@ -319,6 +341,12 @@
 			children = (
 				F95AE32D1F25915400946B37 /* LBProjectViewController.swift */,
 				F95AE32E1F25915400946B37 /* LBProjectViewController.xib */,
+				F946F59F1F2883EB0091A503 /* LBAddNewProjectViewController.swift */,
+				F946F5A01F2883EB0091A503 /* LBAddNewProjectViewController.xib */,
+				F946F5A31F2892350091A503 /* LBEssentialInformationViewController.swift */,
+				F946F5A41F2892350091A503 /* LBEssentialInformationViewController.xib */,
+				F946F59D1F2880FE0091A503 /* model */,
+				F946F59E1F2880FE0091A503 /* view */,
 			);
 			path = project;
 			sourceTree = "<group>";
@@ -536,8 +564,10 @@
 				F95AE2F51F258E4300946B37 /* Assets.xcassets in Resources */,
 				F95AE3301F25915400946B37 /* LBProjectViewController.xib in Resources */,
 				F974C8EA1F26F1AD00A4B029 /* LBServiceClassify.xib in Resources */,
+				F946F5A21F2883EB0091A503 /* LBAddNewProjectViewController.xib in Resources */,
 				F946F59A1F287DCC0091A503 /* GLBusiness_DetailController.xib in Resources */,
 				F95AE3481F25C7CD00946B37 /* tabbarSource.xcassets in Resources */,
+				F946F5A61F2892350091A503 /* LBEssentialInformationViewController.xib in Resources */,
 				F95AE2F31F258E4300946B37 /* Main.storyboard in Resources */,
 				F95AE3501F25D9A300946B37 /* LBEnterpriseHeaderView.xib in Resources */,
 				F95AE3381F25918C00946B37 /* LBMineViewController.xib in Resources */,
@@ -568,6 +598,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F946F5A51F2892350091A503 /* LBEssentialInformationViewController.swift in Sources */,
+				F946F5A11F2883EB0091A503 /* LBAddNewProjectViewController.swift in Sources */,
 				F974C8F61F27486D00A4B029 /* LBVariousActivitiesTableViewCell.swift in Sources */,
 				F974C8F31F273EED00A4B029 /* UIButton+SetEdgeInsets.m in Sources */,
 				F95AE2F01F258E4300946B37 /* ViewController.m in Sources */,
