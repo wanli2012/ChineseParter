@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A750E3D1F287EA0002B7244 /* GLBusiness_PreferredController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A750E3A1F287EA0002B7244 /* GLBusiness_PreferredController.m */; };
+		4A750E3E1F287EA0002B7244 /* GLBusiness_PreferredController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A750E3B1F287EA0002B7244 /* GLBusiness_PreferredController.xib */; };
 		F90AE36D1F2841A500DCF645 /* LBMineListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90AE36B1F2841A500DCF645 /* LBMineListTableViewCell.swift */; };
 		F90AE36E1F2841A500DCF645 /* LBMineListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F90AE36C1F2841A500DCF645 /* LBMineListTableViewCell.xib */; };
 		F946F5991F287DCC0091A503 /* GLBusiness_DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F946F5931F287DCC0091A503 /* GLBusiness_DetailController.m */; };
@@ -76,6 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A750E391F287EA0002B7244 /* GLBusiness_PreferredController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBusiness_PreferredController.h; sourceTree = "<group>"; };
+		4A750E3A1F287EA0002B7244 /* GLBusiness_PreferredController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBusiness_PreferredController.m; sourceTree = "<group>"; };
+		4A750E3B1F287EA0002B7244 /* GLBusiness_PreferredController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLBusiness_PreferredController.xib; sourceTree = "<group>"; };
 		F90AE36B1F2841A500DCF645 /* LBMineListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBMineListTableViewCell.swift; sourceTree = "<group>"; };
 		F90AE36C1F2841A500DCF645 /* LBMineListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBMineListTableViewCell.xib; sourceTree = "<group>"; };
 		F946F5921F287DCC0091A503 /* GLBusiness_DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBusiness_DetailController.h; sourceTree = "<group>"; };
@@ -166,6 +171,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A750E371F287EA0002B7244 /* 商机优选 */ = {
+			isa = PBXGroup;
+			children = (
+				4A750E381F287EA0002B7244 /* Controller */,
+				4A750E3C1F287EA0002B7244 /* View */,
+			);
+			path = "商机优选";
+			sourceTree = "<group>";
+		};
+		4A750E381F287EA0002B7244 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A750E391F287EA0002B7244 /* GLBusiness_PreferredController.h */,
+				4A750E3A1F287EA0002B7244 /* GLBusiness_PreferredController.m */,
+				4A750E3B1F287EA0002B7244 /* GLBusiness_PreferredController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A750E3C1F287EA0002B7244 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F946F5901F287DCC0091A503 /* 商家详情 */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +360,7 @@
 		F95AE3201F25900900946B37 /* business Opportunity */ = {
 			isa = PBXGroup;
 			children = (
+				4A750E371F287EA0002B7244 /* 商机优选 */,
 				F95AE3291F25913800946B37 /* LBBusinessOpportunityViewController.swift */,
 				F95AE32A1F25913800946B37 /* LBBusinessOpportunityViewController.xib */,
 				F946F5901F287DCC0091A503 /* 商家详情 */,
@@ -558,6 +590,7 @@
 				F974C8FB1F274BA400A4B029 /* LBProjectExchangeTableViewCell.xib in Resources */,
 				F95AE2F81F258E4300946B37 /* LaunchScreen.storyboard in Resources */,
 				F95AE3281F2590C000946B37 /* LBEnterpriseViewController.xib in Resources */,
+				4A750E3E1F287EA0002B7244 /* GLBusiness_PreferredController.xib in Resources */,
 				F974C8F71F27486D00A4B029 /* LBVariousActivitiesTableViewCell.xib in Resources */,
 				F974C9071F27613500A4B029 /* LBMineHeaderView.xib in Resources */,
 				F974C9011F275AB100A4B029 /* Mine.xcassets in Resources */,
@@ -614,6 +647,7 @@
 				F95AE3331F25917400946B37 /* LBCircleViewController.swift in Sources */,
 				F95AE32B1F25913800946B37 /* LBBusinessOpportunityViewController.swift in Sources */,
 				F974C9051F27612500A4B029 /* LBMineHeaderView.swift in Sources */,
+				4A750E3D1F287EA0002B7244 /* GLBusiness_PreferredController.m in Sources */,
 				F974C8EF1F273C0D00A4B029 /* LBBusinessOpportunityTableViewCell.swift in Sources */,
 				F946F59B1F287DCC0091A503 /* GLBusiness_DetailCell.m in Sources */,
 				F90AE36D1F2841A500DCF645 /* LBMineListTableViewCell.swift in Sources */,
