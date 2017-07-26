@@ -9,6 +9,9 @@
 #import "GLBusiness_DetailController.h"
 #import "GLBusiness_DetailCell.h"
 
+//测试 后期请删除
+#import "GLBusiness_PreferredController.h"
+
 
 @interface GLBusiness_DetailController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -68,6 +71,9 @@ CGFloat kPIC_HEIGHT = 200;
 //联系企业
 - (IBAction)contactCompany:(id)sender {
     
+    self.hidesBottomBarWhenPushed = YES;
+    GLBusiness_PreferredController * preferVC = [[GLBusiness_PreferredController alloc] init];
+    [self.navigationController pushViewController:preferVC animated:YES];
 }
 
 //滚动代理事件 图片放大 以及 导航栏颜色渐变

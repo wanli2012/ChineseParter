@@ -12,7 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GLBusiness_PreferredController">
             <connections>
+                <outlet property="classifyBtn" destination="2fm-4A-tFO" id="e35-bO-hZO"/>
+                <outlet property="distanceBtn" destination="6mm-vz-4VQ" id="TB5-o9-I8C"/>
+                <outlet property="sortBtn" destination="NCk-Ey-LQG" id="0Lw-ni-7bb"/>
                 <outlet property="tableView" destination="McD-eB-SA0" id="0xE-08-5MC"/>
+                <outlet property="topView" destination="xgZ-9O-Ynw" id="gzf-64-gzU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,19 +28,25 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgZ-9O-Ynw" userLabel="topView">
                     <rect key="frame" x="0.0" y="64" width="375" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fm-4A-tFO">
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fm-4A-tFO">
                             <rect key="frame" x="0.0" y="0.0" width="125" height="49"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <state key="normal" title="全部分类">
+                            <state key="normal">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="choose:" destination="-1" eventType="touchUpInside" id="9LK-iI-OMq"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCk-Ey-LQG">
+                        <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCk-Ey-LQG">
                             <rect key="frame" x="260" y="0.0" width="115" height="49"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <state key="normal" title="智能排序">
+                            <state key="normal">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="choose:" destination="-1" eventType="touchUpInside" id="vI9-Sj-f8J"/>
+                            </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEC-tf-El5">
                             <rect key="frame" x="0.0" y="49" width="375" height="1"/>
@@ -45,12 +55,15 @@
                                 <constraint firstAttribute="height" constant="1" id="DK5-Nm-KpB"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mm-vz-4VQ">
+                        <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mm-vz-4VQ">
                             <rect key="frame" x="135" y="0.0" width="125" height="49"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <state key="normal" title="全程">
+                            <state key="normal">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="choose:" destination="-1" eventType="touchUpInside" id="9hr-jD-KLl"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

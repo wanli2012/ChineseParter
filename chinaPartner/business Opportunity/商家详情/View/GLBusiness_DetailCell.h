@@ -10,4 +10,7 @@
 
 @interface GLBusiness_DetailCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;//距离
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;//日期
+
 @end
