@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="GLBusiness_DetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xCG-Vc-yC6">
+                        <rect key="frame" x="10" y="10" width="100" height="90"/>
+                        <color key="backgroundColor" red="0.1072334722" green="0.61346602439999998" blue="0.7763050199" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="bkF-H2-Kdm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大牌美食联盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xok-iP-O7a">
+                        <rect key="frame" x="120" y="15" width="156" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你大爷闪电发货老师的发了哈森林防火拉师傅  了" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEx-cJ-Ktl">
+                        <rect key="frame" x="120" y="45" width="156" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥76万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4I-8q-QHE">
+                        <rect key="frame" x="120" y="83" width="156" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xok-iP-O7a" firstAttribute="top" secondItem="xCG-Vc-yC6" secondAttribute="top" constant="5" id="5zn-1U-qhp"/>
+                    <constraint firstItem="EEx-cJ-Ktl" firstAttribute="leading" secondItem="xCG-Vc-yC6" secondAttribute="trailing" constant="10" id="8EM-sa-B6L"/>
+                    <constraint firstAttribute="bottom" secondItem="xCG-Vc-yC6" secondAttribute="bottom" constant="10" id="B8x-RF-I6f"/>
+                    <constraint firstItem="j4I-8q-QHE" firstAttribute="leading" secondItem="xCG-Vc-yC6" secondAttribute="trailing" constant="10" id="DMS-Va-pWL"/>
+                    <constraint firstAttribute="trailing" secondItem="Xok-iP-O7a" secondAttribute="trailing" constant="10" id="Efp-yT-jL0"/>
+                    <constraint firstAttribute="trailing" secondItem="j4I-8q-QHE" secondAttribute="trailing" constant="10" id="SSL-9C-j4l"/>
+                    <constraint firstItem="j4I-8q-QHE" firstAttribute="bottom" secondItem="xCG-Vc-yC6" secondAttribute="bottom" id="Xd5-r2-CtL"/>
+                    <constraint firstAttribute="trailing" secondItem="EEx-cJ-Ktl" secondAttribute="trailing" constant="10" id="h9w-9j-dlA"/>
+                    <constraint firstItem="xCG-Vc-yC6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="m33-gc-1bp"/>
+                    <constraint firstItem="Xok-iP-O7a" firstAttribute="leading" secondItem="xCG-Vc-yC6" secondAttribute="trailing" constant="10" id="m7Q-WS-IbH"/>
+                    <constraint firstItem="xCG-Vc-yC6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qoa-Ih-nMk"/>
+                    <constraint firstItem="EEx-cJ-Ktl" firstAttribute="top" secondItem="Xok-iP-O7a" secondAttribute="bottom" constant="10" id="xC8-ap-opJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="EEx-cJ-Ktl" id="Bae-4G-61s"/>
+                <outlet property="imageV" destination="xCG-Vc-yC6" id="frM-zU-R3s"/>
+                <outlet property="nameLabel" destination="Xok-iP-O7a" id="tcT-PK-c7X"/>
+                <outlet property="priceLabel" destination="j4I-8q-QHE" id="aXU-Qd-PE1"/>
+            </connections>
+            <point key="canvasLocation" x="-32" y="50"/>
+        </tableViewCell>
+    </objects>
+</document>

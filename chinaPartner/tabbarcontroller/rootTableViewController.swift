@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class rootTableViewController: UITabBarController,UITabBarControllerDelegate {
     var selectindex = 0
     
@@ -37,10 +38,11 @@ class rootTableViewController: UITabBarController,UITabBarControllerDelegate {
         item3.titlePositionAdjustment = UIOffsetMake(0, -2)
         navIndex2.tabBarItem = item3
         
-        let fourVC  = LBCircleViewController ()
-        let navIndex3=basenavagationViewController(rootViewController: fourVC);
+//        let fourVC  = LBCircleViewController ()
+        let detailVC = GLBusiness_DetailController();
+        let navIndex3=basenavagationViewController(rootViewController: detailVC);
         let item4 : UITabBarItem = UITabBarItem (title: "圈子", image: UIImage(named: "圈子"), selectedImage: UIImage(named: "圈子选中"))
-        fourVC.title="圈子"
+        detailVC.title="圈子"
         navIndex3.tabBarItem = item4
         item4.titlePositionAdjustment = UIOffsetMake(0, -2)
         
