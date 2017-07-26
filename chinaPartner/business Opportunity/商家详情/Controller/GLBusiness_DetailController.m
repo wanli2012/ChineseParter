@@ -7,19 +7,107 @@
 //
 
 #import "GLBusiness_DetailController.h"
+#import "GLBusiness_DetailCell.h"
 
-@interface GLBusiness_DetailController ()
+
+@interface GLBusiness_DetailController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (weak, nonatomic) IBOutlet UIView *navView;//自定义导航栏
+@property (weak, nonatomic) IBOutlet UIButton *backBtn;//返回按钮
+@property (weak, nonatomic) IBOutlet UIButton *collectBtn;//收藏按钮
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;//企业名称
+@property (weak, nonatomic) IBOutlet UILabel *classifyLabel;//行业类型
+@property (weak, nonatomic) IBOutlet UILabel *contactNameLabel;//联系人名字
+@property (weak, nonatomic) IBOutlet UILabel *phoneNumLabel;//联系电话
+@property (weak, nonatomic) IBOutlet UIButton *contactBtn;//联系企业按钮
+
+
 
 @end
 
 @implementation GLBusiness_DetailController
 
+CGFloat kPIC_HEIGHT = 200;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.contactBtn.layer.borderColor = [UIColor blackColor].CGColor;
+    self.contactBtn.layer.borderWidth = 1.f;
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"GLBusiness_DetailCell" bundle:nil] forCellReuseIdentifier:@"GLBusiness_DetailCell"];
+    self.tableView.tableHeaderView.autoresizingMask = NO;
+    
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(kPIC_HEIGHT, 0, 0, 0);
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(-1, -kPIC_HEIGHT, kSCREEN_WIDTH + 1, kPIC_HEIGHT)];
+    imageView.layer.masksToBounds = YES;
+    
+    imageView.image = [UIImage imageNamed:@"测试图片"];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.tag = 101;
+    
+    [self.tableView addSubview:imageView];
+
 }
 
+//返回键点击事件
+- (IBAction)back:(id)sender {
+    
+}
+
+//收藏
+- (IBAction)collectClick:(id)sender {
+    
+//    self.collectBtn.selected = !self.collectBtn.selected;
+
+}
+
+//联系企业
+- (IBAction)contactCompany:(id)sender {
+    
+}
+
+//滚动代理事件 图片放大 以及 导航栏颜色渐变
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    //图片放大
+    CGPoint point = scrollView.contentOffset;
+    if (point.y < - kPIC_HEIGHT) {
+        CGRect rect = [self.tableView viewWithTag:101].frame;
+        rect.origin.y = point.y;
+        rect.size.height = -point.y;
+        [self.tableView viewWithTag:101].frame = rect;
+    }
+    
+    //导航栏颜色渐变
+    UIColor *color=[UIColor whiteColor];
+    CGFloat offset = scrollView.contentOffset.y + 20;
+    if (offset < 0) {
+        self.navView.backgroundColor = [color colorWithAlphaComponent:0];
+    }else {
+        CGFloat alpha = 1-((64-offset)/64);
+        self.navView.backgroundColor= [color colorWithAlphaComponent:alpha];
+    }
+
+}
+
+#pragma mark UITableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 8;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    GLBusiness_DetailCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GLBusiness_DetailCell"];
+    
+    cell.selectionStyle = 0;
+    return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 110;
+}
 
 @end

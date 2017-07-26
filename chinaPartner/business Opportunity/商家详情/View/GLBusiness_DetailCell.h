@@ -1,5 +1,5 @@
 //
-//  GLBusiness_DetailHeaderView.h
+//  GLBusiness_DetailCell.h
 //  chinaPartner
 //
 //  Created by 龚磊 on 2017/7/26.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GLBusiness_DetailHeaderView : UITableViewHeaderFooterView
+@interface GLBusiness_DetailCell : UITableViewCell
 
 @end
