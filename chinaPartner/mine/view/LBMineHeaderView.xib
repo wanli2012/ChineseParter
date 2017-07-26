@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LBMineHeaderView" customModule="chinaPartner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="测试图片" translatesAutoresizingMaskIntoConstraints="NO" id="djH-KX-TsZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="uaL-kd-b3k"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adt-bg-I1P">
+                    <rect key="frame" x="20" y="150" width="335" height="200"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="交通" translatesAutoresizingMaskIntoConstraints="NO" id="H1B-M5-7ZN">
+                    <rect key="frame" x="147" y="105" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="B7G-zW-ynP"/>
+                        <constraint firstAttribute="width" constant="80" id="eLJ-Xq-DuY"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="djH-KX-TsZ" secondAttribute="trailing" id="55z-yN-hCZ"/>
+                <constraint firstItem="adt-bg-I1P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="FpL-Qt-LY7"/>
+                <constraint firstItem="H1B-M5-7ZN" firstAttribute="centerX" secondItem="djH-KX-TsZ" secondAttribute="centerX" id="Mz1-yQ-SxI"/>
+                <constraint firstItem="H1B-M5-7ZN" firstAttribute="bottom" secondItem="djH-KX-TsZ" secondAttribute="bottom" constant="-15" id="SOS-1h-OWs"/>
+                <constraint firstItem="djH-KX-TsZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Yjw-GW-wig"/>
+                <constraint firstAttribute="bottom" secondItem="adt-bg-I1P" secondAttribute="bottom" id="dbo-Le-r7T"/>
+                <constraint firstItem="adt-bg-I1P" firstAttribute="top" secondItem="djH-KX-TsZ" secondAttribute="bottom" constant="-50" id="e4Z-5D-hNg"/>
+                <constraint firstItem="djH-KX-TsZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ipy-ME-UJm"/>
+                <constraint firstAttribute="trailing" secondItem="adt-bg-I1P" secondAttribute="trailing" constant="20" id="p0e-7o-dGc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backImage" destination="djH-KX-TsZ" id="7wo-cA-tUj"/>
+                <outlet property="baseView" destination="adt-bg-I1P" id="Wpx-Qu-9Wg"/>
+                <outlet property="haadImage" destination="H1B-M5-7ZN" id="4c5-Ra-IRO"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="交通" width="50" height="50"/>
+        <image name="测试图片" width="550" height="550"/>
+    </resources>
+</document>

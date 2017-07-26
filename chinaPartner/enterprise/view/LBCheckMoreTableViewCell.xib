@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LBCheckMoreTableViewCell" customModule="chinaPartner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页装饰三角" translatesAutoresizingMaskIntoConstraints="NO" id="8HU-wC-xP3">
+                        <rect key="frame" x="10" y="20" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Iqc-ed-MEz"/>
+                            <constraint firstAttribute="width" constant="10" id="SOt-Ji-RTj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目交流圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqG-Yv-4Lp">
+                        <rect key="frame" x="30" y="15" width="76.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="2w0-Mb-4Sd"/>
+                            <constraint firstAttribute="height" constant="20" id="Ph0-EG-ajS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yq-o6-iwg">
+                        <rect key="frame" x="240" y="10" width="70" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="6QX-cJ-JWz"/>
+                            <constraint firstAttribute="height" constant="30" id="SGg-he-P5Y"/>
+                        </constraints>
+                        <state key="normal" title="MORE" image="方向键">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8HU-wC-xP3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4ZD-em-jbF"/>
+                    <constraint firstItem="ZqG-Yv-4Lp" firstAttribute="centerY" secondItem="8HU-wC-xP3" secondAttribute="centerY" id="EhI-kc-fQ4"/>
+                    <constraint firstItem="ZqG-Yv-4Lp" firstAttribute="leading" secondItem="8HU-wC-xP3" secondAttribute="trailing" constant="10" id="NmA-1x-8iG"/>
+                    <constraint firstItem="7yq-o6-iwg" firstAttribute="centerY" secondItem="ZqG-Yv-4Lp" secondAttribute="centerY" id="Pmw-lh-YhG"/>
+                    <constraint firstAttribute="trailing" secondItem="7yq-o6-iwg" secondAttribute="trailing" constant="10" id="gGp-Lc-iqO"/>
+                    <constraint firstItem="8HU-wC-xP3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="oAV-5k-Nck"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moreBt" destination="7yq-o6-iwg" id="f9i-6c-U58"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="方向键" width="7" height="13"/>
+        <image name="首页装饰三角" width="10" height="10"/>
+    </resources>
+</document>
