@@ -10,10 +10,10 @@
 
 @interface GLBusiness_DetailCell ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageV;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *detailLabel;
-@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageV;//图片
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;//名称
+@property (weak, nonatomic) IBOutlet UILabel *detailLabel;//描述
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;//价格
 
 @end
 
