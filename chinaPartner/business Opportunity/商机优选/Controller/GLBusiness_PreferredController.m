@@ -123,19 +123,8 @@
             _chooseVC.dataSource = @[@"全部",@"美食",@"傻逼",@"吕兵那个傻逼",@"全部",@"美食",@"傻逼",@"吕兵那个傻逼",@"全部",@"美食",@"傻逼",@"吕兵那个傻逼"];
             _chooseVC.view.width = kSCREEN_WIDTH / 2;
             _chooseVC.block = ^(NSString *value,NSInteger index){
-                
-                [weakSelf.classifyBtn setTitle:value forState:UIControlStateNormal];
-                [weakSelf refreshTheTopBtn];
-             
-                if ([weakSelf.sortBtn.titleLabel.text isEqualToString:@"分类"]) {
-                    
-                    weakSelf.sortBtn.imageView.image = [UIImage imageNamed:@"向下箭头"];
-                }else{
-                    weakSelf.sortBtn.imageView.image = [UIImage imageNamed:@""];
-                }
 
-                
-
+                //二级选项
                 weakSelf.chooseVC2.view.frame = CGRectMake(kSCREEN_WIDTH / 2 ,0, SCREEN_WIDTH/2, 0);
                 [weakSelf.maskV addSubview:weakSelf.chooseVC2.view];
 
@@ -166,7 +155,6 @@
                 }];
                 
                 [weakSelf.chooseVC2.tableView reloadData];
-//                [weakSelf dismiss];
             };
 
         }
@@ -180,14 +168,6 @@
                 [weakSelf.distanceBtn setTitle:value forState:UIControlStateNormal];
                 [weakSelf refreshTheTopBtn];
            
-                if ([weakSelf.sortBtn.titleLabel.text isEqualToString:@"距离"]) {
-                    
-                    weakSelf.sortBtn.imageView.image = [UIImage imageNamed:@"向下箭头"];
-                }else{
-                    weakSelf.sortBtn.imageView.image = [UIImage imageNamed:@""];
-                }
-                
-                //                [weakSelf updateData:YES];
                 [weakSelf dismiss];
             };
 
@@ -201,23 +181,6 @@
             _chooseVC.block = ^(NSString *value,NSInteger index){
                 [weakSelf.sortBtn setTitle:value forState:UIControlStateNormal];
                 [weakSelf refreshTheTopBtn];
-                if ([value isEqualToString:@"智能排序"]) {
-                    
-//                    weakSelf.sort = @"1";
-                }else if ([value isEqualToString:@"好评优先"]){
-//                    weakSelf.sort = @"2";
-                }else if ([value isEqualToString:@"离我最近"]){
-//                    weakSelf.sort = @"3";
-                }
-                
-                if ([weakSelf.sortBtn.titleLabel.text isEqualToString:@"排序"]) {
-                    
-                    weakSelf.sortBtn.imageView.image = [UIImage imageNamed:@"向下箭头"];
-                }else{
-                    weakSelf.sortBtn.imageView.image = [UIImage imageNamed:@""];
-                }
-                
-//                [weakSelf updateData:YES];
                 [weakSelf dismiss];
             };
 

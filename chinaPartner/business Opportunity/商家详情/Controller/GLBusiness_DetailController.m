@@ -43,7 +43,6 @@ CGFloat kPIC_HEIGHT = 200;
     [self.tableView registerNib:[UINib nibWithNibName:@"GLBusiness_DetailCell" bundle:nil] forCellReuseIdentifier:@"GLBusiness_DetailCell"];
     self.tableView.tableHeaderView.autoresizingMask = NO;
     
-    
     self.tableView.contentInset = UIEdgeInsetsMake(kPIC_HEIGHT, 0, 0, 0);
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(-1, -kPIC_HEIGHT, kSCREEN_WIDTH + 1, kPIC_HEIGHT)];
     imageView.layer.masksToBounds = YES;
@@ -56,6 +55,10 @@ CGFloat kPIC_HEIGHT = 200;
 
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
 //返回键点击事件
 - (IBAction)back:(id)sender {
     
