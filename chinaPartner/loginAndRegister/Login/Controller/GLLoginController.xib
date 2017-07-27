@@ -12,8 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GLLoginController">
             <connections>
                 <outlet property="bgView" destination="IFe-nZ-ZBj" id="t4D-8M-Osf"/>
+                <outlet property="forgetBtn" destination="PWV-3L-lcj" id="1XD-Tp-jHh"/>
                 <outlet property="passWordTextF" destination="io8-j5-Ftp" id="Ql7-3J-k0e"/>
                 <outlet property="phoneTextF" destination="UwF-uo-CGh" id="wGc-Fd-a9E"/>
+                <outlet property="registerBtn" destination="tuZ-sY-p6a" id="L3q-VQ-enn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -51,7 +53,7 @@
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="register:" destination="-1" eventType="touchUpInside" id="zBq-US-SGr"/>
+                                <action selector="registerAndForgetPwd:" destination="-1" eventType="touchUpInside" id="Ows-vd-1Gg"/>
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6c6-qy-hbf">
@@ -130,7 +132,7 @@
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="forgetPassWord:" destination="-1" eventType="touchUpInside" id="zvb-SL-Xfh"/>
+                                <action selector="registerAndForgetPwd:" destination="-1" eventType="touchUpInside" id="GIc-0K-Jb9"/>
                             </connections>
                         </button>
                     </subviews>

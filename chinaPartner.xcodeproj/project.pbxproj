@@ -21,8 +21,7 @@
 		4A57E6AF1F29C7140081E49A /* LoginAndRegister.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A57E6AE1F29C7140081E49A /* LoginAndRegister.xcassets */; };
 		4A57E6B31F29CF730081E49A /* GLRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A57E6B11F29CF730081E49A /* GLRegisterController.m */; };
 		4A57E6B41F29CF730081E49A /* GLRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A57E6B21F29CF730081E49A /* GLRegisterController.xib */; };
-		4A57E6B81F29D67F0081E49A /* GLForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A57E6B61F29D67F0081E49A /* GLForgetPasswordController.m */; };
-		4A57E6B91F29D67F0081E49A /* GLForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A57E6B71F29D67F0081E49A /* GLForgetPasswordController.xib */; };
+		4A57E6BC1F29F7C90081E49A /* CALayer+Layercolor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A57E6BB1F29F7C90081E49A /* CALayer+Layercolor.m */; };
 		4A750E3D1F287EA0002B7244 /* GLBusiness_PreferredController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A750E3A1F287EA0002B7244 /* GLBusiness_PreferredController.m */; };
 		4A750E3E1F287EA0002B7244 /* GLBusiness_PreferredController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A750E3B1F287EA0002B7244 /* GLBusiness_PreferredController.xib */; };
 		F90AE36D1F2841A500DCF645 /* LBMineListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90AE36B1F2841A500DCF645 /* LBMineListTableViewCell.swift */; };
@@ -111,9 +110,8 @@
 		4A57E6B01F29CF730081E49A /* GLRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRegisterController.h; sourceTree = "<group>"; };
 		4A57E6B11F29CF730081E49A /* GLRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRegisterController.m; sourceTree = "<group>"; };
 		4A57E6B21F29CF730081E49A /* GLRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLRegisterController.xib; sourceTree = "<group>"; };
-		4A57E6B51F29D67F0081E49A /* GLForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLForgetPasswordController.h; sourceTree = "<group>"; };
-		4A57E6B61F29D67F0081E49A /* GLForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLForgetPasswordController.m; sourceTree = "<group>"; };
-		4A57E6B71F29D67F0081E49A /* GLForgetPasswordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLForgetPasswordController.xib; sourceTree = "<group>"; };
+		4A57E6BA1F29F7C90081E49A /* CALayer+Layercolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Layercolor.h"; sourceTree = "<group>"; };
+		4A57E6BB1F29F7C90081E49A /* CALayer+Layercolor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Layercolor.m"; sourceTree = "<group>"; };
 		4A750E391F287EA0002B7244 /* GLBusiness_PreferredController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBusiness_PreferredController.h; sourceTree = "<group>"; };
 		4A750E3A1F287EA0002B7244 /* GLBusiness_PreferredController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBusiness_PreferredController.m; sourceTree = "<group>"; };
 		4A750E3B1F287EA0002B7244 /* GLBusiness_PreferredController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLBusiness_PreferredController.xib; sourceTree = "<group>"; };
@@ -246,35 +244,8 @@
 			children = (
 				4A57E6A31F29C4F60081E49A /* Login */,
 				4A57E6A61F29C4F60081E49A /* Register */,
-				4A57E6A01F29C4F60081E49A /* ForgetPassWord */,
 			);
 			path = loginAndRegister;
-			sourceTree = "<group>";
-		};
-		4A57E6A01F29C4F60081E49A /* ForgetPassWord */ = {
-			isa = PBXGroup;
-			children = (
-				4A57E6A11F29C4F60081E49A /* Controller */,
-				4A57E6A21F29C4F60081E49A /* View */,
-			);
-			path = ForgetPassWord;
-			sourceTree = "<group>";
-		};
-		4A57E6A11F29C4F60081E49A /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4A57E6B51F29D67F0081E49A /* GLForgetPasswordController.h */,
-				4A57E6B61F29D67F0081E49A /* GLForgetPasswordController.m */,
-				4A57E6B71F29D67F0081E49A /* GLForgetPasswordController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		4A57E6A21F29C4F60081E49A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		4A57E6A31F29C4F60081E49A /* Login */ = {
@@ -477,6 +448,8 @@
 				4A57E67D1F2977C80081E49A /* UIView+Extension.m */,
 				F974C8F11F273EED00A4B029 /* UIButton+SetEdgeInsets.h */,
 				F974C8F21F273EED00A4B029 /* UIButton+SetEdgeInsets.m */,
+				4A57E6BA1F29F7C90081E49A /* CALayer+Layercolor.h */,
+				4A57E6BB1F29F7C90081E49A /* CALayer+Layercolor.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -733,7 +706,6 @@
 				4A750E3E1F287EA0002B7244 /* GLBusiness_PreferredController.xib in Resources */,
 				F974C8F71F27486D00A4B029 /* LBVariousActivitiesTableViewCell.xib in Resources */,
 				F974C9071F27613500A4B029 /* LBMineHeaderView.xib in Resources */,
-				4A57E6B91F29D67F0081E49A /* GLForgetPasswordController.xib in Resources */,
 				F974C9011F275AB100A4B029 /* Mine.xcassets in Resources */,
 				F95AE2F51F258E4300946B37 /* Assets.xcassets in Resources */,
 				F95AE3301F25915400946B37 /* LBProjectViewController.xib in Resources */,
@@ -788,6 +760,7 @@
 				F95AE32F1F25915400946B37 /* LBProjectViewController.swift in Sources */,
 				F95AE34E1F25D98900946B37 /* LBEnterpriseHeaderView.swift in Sources */,
 				F95AE3371F25918C00946B37 /* LBMineViewController.swift in Sources */,
+				4A57E6BC1F29F7C90081E49A /* CALayer+Layercolor.m in Sources */,
 				F95AE3331F25917400946B37 /* LBCircleViewController.swift in Sources */,
 				F95AE32B1F25913800946B37 /* LBBusinessOpportunityViewController.swift in Sources */,
 				F974C9051F27612500A4B029 /* LBMineHeaderView.swift in Sources */,
@@ -803,7 +776,6 @@
 				4A57E6991F29C4660081E49A /* GLBusiness_DetailController.m in Sources */,
 				F95AE2EA1F258E4300946B37 /* main.m in Sources */,
 				F974C8FA1F274BA400A4B029 /* LBProjectExchangeTableViewCell.swift in Sources */,
-				4A57E6B81F29D67F0081E49A /* GLForgetPasswordController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

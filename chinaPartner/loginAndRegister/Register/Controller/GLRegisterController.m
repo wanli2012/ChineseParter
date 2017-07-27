@@ -23,6 +23,7 @@
 @implementation GLRegisterController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
 
     self.bgView.layer.cornerRadius = 8.f;
@@ -35,6 +36,7 @@
         [self.submitBtn setTitle:@"提  交" forState:UIControlStateNormal];
     }
 }
+
 //获取验证码
 - (IBAction)getCodeClick:(id)sender {
     
@@ -43,17 +45,38 @@
 - (IBAction)register:(id)sender {
     
     if(self.type == 1){
+        
         NSLog(@"注册");
+        
     }else if(self.type == 2){
+        
         NSLog(@"忘记密码");
+        
     }
     
 }
+
 //去登录
 - (IBAction)login:(id)sender {
     
-//    [self setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [self dismissViewControllerAnimated:YES completion:nil];
+    CATransition *animation = [CATransition animation];
+    animation.timingFunction = UIViewAnimationCurveEaseInOut;
+    
+    if (self.type == 1) {//注册
+        
+        animation.type = @"rippleEffect";
+        animation.subtype = kCATransitionFromLeft;
+        animation.duration = 1.0;
+        
+    }else if(self.type == 2){//忘记密码
+        
+        animation.type = @"oglFlip";
+        animation.subtype = kCATransitionFromRight;
+        animation.duration = 0.5;
+    }
+    
+    [self.view.window.layer addAnimation:animation forKey:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 

@@ -32,6 +32,8 @@
     
     [super viewDidLoad];
 
+    self.navigationItem.title = @"全部企业";
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"GLBusiness_DetailCell" bundle:nil] forCellReuseIdentifier:@"GLBusiness_DetailCell"];
     
     [self.classifyBtn setTitle:@"分类" forState:UIControlStateNormal];
