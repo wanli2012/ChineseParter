@@ -22,6 +22,12 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
+    //可以在这里适配字体大小
+    self.nameLabel.font = [UIFont systemFontOfSize:15];
+    self.detailLabel.font = [UIFont systemFontOfSize:12];
+    self.priceLabel.font = [UIFont systemFontOfSize:13];
+    self.distanceLabel.font = [UIFont systemFontOfSize:11];
+    self.dateLabel.font = [UIFont systemFontOfSize:11];
 }
 
 
