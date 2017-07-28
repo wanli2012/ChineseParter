@@ -1,15 +1,14 @@
 //
-//  UIView+Extension.h
-//  HaoWeibo
+//  UIView+category.h
+//  chinaPartner
 //
-//  Created by 张仁昊 on 16/3/9.
-//  Copyright © 2016年 张仁昊. All rights reserved.
+//  Created by 四川三君科技有限公司 on 2017/7/28.
+//  Copyright © 2017年 四川三君科技有限公司. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Extension)
-
+@interface UIView (category)
 
 @property(nonatomic,assign)CGFloat x;
 @property(nonatomic,assign)CGFloat y;
@@ -20,6 +19,5 @@
 
 @property(nonatomic,assign)CGFloat centerX;
 @property(nonatomic,assign)CGFloat centerY;
-
 
 @end

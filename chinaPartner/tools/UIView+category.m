@@ -1,16 +1,14 @@
 //
-//  UIView+Extension.m
-//  HaoWeibo
+//  UIView+category.m
+//  chinaPartner
 //
-//  Created by 张仁昊 on 16/3/9.
-//  Copyright © 2016年 张仁昊. All rights reserved.
+//  Created by 四川三君科技有限公司 on 2017/7/28.
+//  Copyright © 2017年 四川三君科技有限公司. All rights reserved.
 //
 
-#import "UIView+Extension.h"
+#import "UIView+category.h"
 
-@implementation UIView (Extension)
-
-
+@implementation UIView (category)
 
 -(void)setX:(CGFloat)x{
     
@@ -107,10 +105,6 @@
     
     return self.frame.origin;
 }
-
-
-
-
 
 
 @end
