@@ -38,7 +38,11 @@
 - (IBAction)login:(id)sender {
     
 }
-
+//退出登录
+- (IBAction)ExitEvent:(UIButton *)sender {
+    
+    [self dismissViewControllerAnimated:true completion:nil];
+}
 
 //注册 和 忘记密码
 - (IBAction)registerAndForgetPwd:(UIButton *)sender {

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -44,9 +44,9 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tuZ-sY-p6a">
-                            <rect key="frame" x="160" y="340" width="70" height="28"/>
+                            <rect key="frame" x="180" y="340" width="50" height="28"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="70" id="MNW-Bg-m4x"/>
+                                <constraint firstAttribute="width" constant="50" id="MNW-Bg-m4x"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="注册">
@@ -135,6 +135,19 @@
                                 <action selector="registerAndForgetPwd:" destination="-1" eventType="touchUpInside" id="GIc-0K-Jb9"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b43-gY-leS">
+                            <rect key="frame" x="30" y="340" width="50" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="dmD-nM-PBt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="退出">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="ExitEvent:" destination="-1" eventType="touchUpInside" id="WSG-3w-LYJ"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -145,7 +158,9 @@
                         <constraint firstItem="6c6-qy-hbf" firstAttribute="top" secondItem="wD7-LG-Wo3" secondAttribute="bottom" constant="10" id="SJP-q9-Pry"/>
                         <constraint firstItem="tuZ-sY-p6a" firstAttribute="bottom" secondItem="rC4-AM-6N7" secondAttribute="bottom" id="SSw-yV-KUQ"/>
                         <constraint firstAttribute="trailing" secondItem="PWV-3L-lcj" secondAttribute="trailing" constant="30" id="Zhg-Vh-Ajw"/>
+                        <constraint firstItem="tuZ-sY-p6a" firstAttribute="centerY" secondItem="b43-gY-leS" secondAttribute="centerY" id="bxv-ds-hbR"/>
                         <constraint firstItem="QXp-YA-Woa" firstAttribute="leading" secondItem="IFe-nZ-ZBj" secondAttribute="leading" constant="30" id="dke-mh-rf4"/>
+                        <constraint firstItem="b43-gY-leS" firstAttribute="leading" secondItem="IFe-nZ-ZBj" secondAttribute="leading" constant="30" id="gNl-Ps-UND"/>
                         <constraint firstAttribute="trailing" secondItem="tuZ-sY-p6a" secondAttribute="trailing" constant="30" id="hBZ-CP-XHV"/>
                         <constraint firstItem="PWV-3L-lcj" firstAttribute="top" secondItem="QXp-YA-Woa" secondAttribute="bottom" constant="5" id="mN7-sF-0hw"/>
                         <constraint firstItem="wD7-LG-Wo3" firstAttribute="centerX" secondItem="IFe-nZ-ZBj" secondAttribute="centerX" id="nKl-fU-IlV"/>
