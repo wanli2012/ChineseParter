@@ -31,19 +31,27 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ozz-30-etc">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="设置" translatesAutoresizingMaskIntoConstraints="NO" id="HZn-qV-Ax1">
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="设置" translatesAutoresizingMaskIntoConstraints="NO" id="HZn-qV-Ax1">
                             <rect key="frame" x="20" y="29" width="30" height="30"/>
+                            <gestureRecognizers/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="Apf-fO-RNF"/>
                                 <constraint firstAttribute="height" constant="30" id="a4M-bW-zek"/>
                             </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="BC6-vA-lug" appends="YES" id="UCh-hZ-4Jv"/>
+                            </connections>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="消息" translatesAutoresizingMaskIntoConstraints="NO" id="Bh7-FP-j7n">
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="消息" translatesAutoresizingMaskIntoConstraints="NO" id="Bh7-FP-j7n">
                             <rect key="frame" x="325" y="29" width="30" height="30"/>
+                            <gestureRecognizers/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="6aW-TA-WnQ"/>
                                 <constraint firstAttribute="width" constant="30" id="LA3-u8-g2E"/>
                             </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="eWG-Ec-rXY" appends="YES" id="uf1-iw-4Lx"/>
+                            </connections>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -68,6 +76,16 @@
             </constraints>
             <point key="canvasLocation" x="35.5" y="53.5"/>
         </view>
+        <tapGestureRecognizer id="BC6-vA-lug">
+            <connections>
+                <action selector="点击设置按钮:" destination="-1" id="YPD-hS-6F3"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="eWG-Ec-rXY">
+            <connections>
+                <action selector="点击消息按钮:" destination="-1" id="zFs-WK-8E7"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="消息" width="30" height="30"/>

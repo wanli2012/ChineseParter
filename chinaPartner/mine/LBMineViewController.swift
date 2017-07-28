@@ -27,6 +27,16 @@ class LBMineViewController: UIViewController {
         self.tableview.addSubview(self.HeaderV)
         self.automaticallyAdjustsScrollViewInsets = false;
         
+        let tapgesture = UITapGestureRecognizer.init(target: self, action: #selector(LBMineViewController.点击头像))
+        HeaderV.haadImage.addGestureRecognizer(tapgesture)
+        
+    }
+    
+    func 点击头像() -> Void {
+        self.hidesBottomBarWhenPushed = true
+        let vc = LBPerfectInformationViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        self.hidesBottomBarWhenPushed = false
     }
 
     private lazy var HeaderV:LBMineHeaderView={
@@ -53,6 +63,22 @@ class LBMineViewController: UIViewController {
        
     }
 
+    @IBAction func 点击设置按钮(_ sender: UITapGestureRecognizer) {
+        self.hidesBottomBarWhenPushed = true
+        let vc = LBMineSetUpViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        self.hidesBottomBarWhenPushed = false
+        
+    }
+    @IBAction func 点击消息按钮(_ sender: UITapGestureRecognizer) {
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
 
 }
 
@@ -95,3 +121,5 @@ extension LBMineViewController:UITableViewDelegate,UITableViewDataSource{
     
     
 }
+
+

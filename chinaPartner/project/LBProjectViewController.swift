@@ -10,18 +10,56 @@ import UIKit
 
 class LBProjectViewController: UIViewController {
 
-    @IBOutlet weak var tableview: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.gray;
-        let nib = UINib(nibName: "LBProjectExchangeTableViewCell", bundle: nil) //nibName指的是我们创建的Cell文件名
-        self.tableview.register(nib, forCellReuseIdentifier: "LBProjectExchangeTableViewCell")
-        self.automaticallyAdjustsScrollViewInsets = false;
+        self.view.backgroundColor = UIColor.white;
+        加载界面()
         
     }
 
+    func 加载界面() -> Void {
+        
+        VCManager.title_font = UIFont.systemFont(ofSize: 15)
+        VCManager.sliderWidthType = .ButtonWidth
+        VCManager.title_array = subviewTitles
+        setConstraint()
+        
+    }
+    
+    fileprivate func setConstraint(){
+        
+        pageMagager.view.snp.makeConstraints { (make) in
+            make.top.equalTo(VCManager.snp.bottom)
+            make.left.right.equalTo(view)
+            make.bottom.equalTo(view.snp.bottom).offset(-49)
+        }
+    }
+    
+    lazy var subviewTitles:[String] = {
+        
+        let array = ["全部", "审核中","审核失败","审核成功","垃圾"]
+        return array
+        
+    }()
+    
+    lazy var VCManager:VCManagerView = {
+        
+        let manager = VCManagerView(frame:CGRect.init(x: 0, y: 64, width: kScreenW, height: 44))
+        manager.delegate = self
+        self.view.addSubview(manager)
+        
+        return manager
+        
+    }()
+    lazy var pageMagager:PageManagerVC = {
+        
+        let manager = PageManagerVC.init(superController: self, childControllerS: [LBProjectShowListViewController(),LBProjectShowListViewController(),LBProjectShowListViewController(),LBProjectShowListViewController(),LBProjectShowListViewController()])
+        manager.delegate = self
+        self.view.addSubview(manager.view)
+        return manager
+        
+    }()
  
     @IBAction func addProject(_ sender: UIButton) {
         
@@ -41,40 +79,19 @@ class LBProjectViewController: UIViewController {
 
 }
 
-    extension LBProjectViewController:UITableViewDelegate,UITableViewDataSource{
+extension LBProjectViewController:VCManagerDelegate,PageManagerVC_Delegate{
     
-    private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func VCManagerDidSelected(_ VCManager: VCManagerView, index: NSInteger, title: String) {
         
-        return 10
+        pageMagager.setCurrentVCWithIndex(index)
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-            var cell:LBProjectExchangeTableViewCell = tableView.dequeueReusableCell(withIdentifier: "LBProjectExchangeTableViewCell", for: indexPath) as! LBProjectExchangeTableViewCell
-            
-            if cell.isEqual(nil){
-                
-                cell = LBProjectExchangeTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "LBProjectExchangeTableViewCell")
-            }
-        
-            return cell
-
+    func PageManagerDidFinishSelectedVC(indexOfVC: NSInteger) {
+        VCManager.reloadSelectedBT(at: indexOfVC)
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
-    {
-        
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
-    {
-        
-        return 120
-    }
-    
     
 }
+
+
+    
 

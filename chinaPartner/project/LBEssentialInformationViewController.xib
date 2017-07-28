@@ -119,17 +119,17 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKb-j4-6Mg">
-                                            <rect key="frame" x="102" y="10" width="253" height="40"/>
+                                            <rect key="frame" x="102" y="10" width="137" height="40"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="向下箭头" translatesAutoresizingMaskIntoConstraints="NO" id="Z5T-Q4-UFL">
-                                                    <rect key="frame" x="228" y="13" width="15" height="15"/>
+                                                    <rect key="frame" x="112" y="13" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="2hn-n0-pCU"/>
                                                         <constraint firstAttribute="height" constant="15" id="QH0-SR-p4p"/>
                                                     </constraints>
                                                 </imageView>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择分类" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z2p-sb-ORQ">
-                                                    <rect key="frame" x="15" y="0.0" width="198" height="40"/>
+                                                    <rect key="frame" x="15" y="0.0" width="82" height="40"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -151,12 +151,48 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aJ-0h-oS1">
+                                            <rect key="frame" x="238" y="10" width="136.5" height="40"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="向下箭头" translatesAutoresizingMaskIntoConstraints="NO" id="jua-Yv-mds">
+                                                    <rect key="frame" x="111.5" y="13" width="15" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="15" id="alc-be-Ko3"/>
+                                                        <constraint firstAttribute="height" constant="15" id="elJ-to-FuP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择分类" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-RY-AI4">
+                                                    <rect key="frame" x="15" y="0.0" width="81.5" height="40"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="0Pz-EH-B3d"/>
+                                                <constraint firstItem="jua-Yv-mds" firstAttribute="leading" secondItem="F4i-RY-AI4" secondAttribute="trailing" constant="15" id="5Nk-x6-2pO"/>
+                                                <constraint firstItem="F4i-RY-AI4" firstAttribute="leading" secondItem="2aJ-0h-oS1" secondAttribute="leading" constant="15" id="BsO-p1-AWx"/>
+                                                <constraint firstItem="jua-Yv-mds" firstAttribute="centerY" secondItem="2aJ-0h-oS1" secondAttribute="centerY" id="E8Q-bg-BtL"/>
+                                                <constraint firstAttribute="bottom" secondItem="F4i-RY-AI4" secondAttribute="bottom" id="Kmd-cq-fbG"/>
+                                                <constraint firstItem="F4i-RY-AI4" firstAttribute="top" secondItem="2aJ-0h-oS1" secondAttribute="top" id="MCQ-uz-sNP"/>
+                                                <constraint firstAttribute="trailing" secondItem="jua-Yv-mds" secondAttribute="trailing" constant="10" id="SxN-cp-kPb"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                    <integer key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
+                                        <constraint firstItem="2aJ-0h-oS1" firstAttribute="centerY" secondItem="pKb-j4-6Mg" secondAttribute="centerY" id="9Gp-8A-pvX"/>
+                                        <constraint firstItem="2aJ-0h-oS1" firstAttribute="width" secondItem="pKb-j4-6Mg" secondAttribute="width" id="Br3-NY-Ege"/>
                                         <constraint firstItem="pKb-j4-6Mg" firstAttribute="leading" secondItem="vTd-Xl-zb9" secondAttribute="trailing" constant="30" id="DhF-QV-ReL"/>
-                                        <constraint firstAttribute="trailing" secondItem="pKb-j4-6Mg" secondAttribute="trailing" constant="20" id="dWr-fY-kp5"/>
+                                        <constraint firstAttribute="trailing" secondItem="2aJ-0h-oS1" secondAttribute="trailing" id="OKM-ST-8pe"/>
                                         <constraint firstItem="vTd-Xl-zb9" firstAttribute="leading" secondItem="4KE-wn-JfN" secondAttribute="leading" constant="10" id="ghO-dj-WpL"/>
+                                        <constraint firstItem="2aJ-0h-oS1" firstAttribute="leading" secondItem="pKb-j4-6Mg" secondAttribute="trailing" constant="-1" id="ity-Uy-qeF"/>
                                         <constraint firstItem="pKb-j4-6Mg" firstAttribute="centerY" secondItem="vTd-Xl-zb9" secondAttribute="centerY" id="iwe-1K-PT2"/>
                                         <constraint firstItem="vTd-Xl-zb9" firstAttribute="centerY" secondItem="4KE-wn-JfN" secondAttribute="centerY" id="kSc-0g-u4P"/>
                                         <constraint firstAttribute="height" constant="60" id="r5t-Ns-3YO"/>
