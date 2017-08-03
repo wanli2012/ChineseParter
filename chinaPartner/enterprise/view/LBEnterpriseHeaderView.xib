@@ -25,21 +25,20 @@
                                 <constraint firstAttribute="width" constant="18" id="fgj-rP-fyP"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成都" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CL-Bf-N6j">
-                            <rect key="frame" x="33" y="34" width="40" height="20"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CL-Bf-N6j">
+                            <rect key="frame" x="33" y="34" width="0.0" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="34L-Sl-bqZ"/>
-                                <constraint firstAttribute="width" constant="40" id="gVg-pq-3Qw"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLj-0p-3VL">
-                            <rect key="frame" x="93" y="29" width="272" height="30"/>
+                            <rect key="frame" x="48" y="29" width="317" height="30"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入企业、分类或商圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V98-0t-BOj">
-                                    <rect key="frame" x="82.5" y="5.5" width="123" height="20"/>
+                                    <rect key="frame" x="105" y="5.5" width="123" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="9KZ-Gt-cUY"/>
                                         <constraint firstAttribute="height" constant="20" id="Q9r-0R-cpD"/>
@@ -49,7 +48,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="Shi-Mb-enT">
-                                    <rect key="frame" x="62.5" y="8.5" width="15" height="15"/>
+                                    <rect key="frame" x="85" y="8.5" width="15" height="15"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="15" id="Qfz-Z3-1md"/>
                                         <constraint firstAttribute="height" constant="15" id="Zqo-5f-2uW"/>
@@ -57,6 +56,7 @@
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
                             <constraints>
                                 <constraint firstItem="V98-0t-BOj" firstAttribute="leading" secondItem="Shi-Mb-enT" secondAttribute="trailing" constant="5" id="KQ6-9O-wPq"/>
                                 <constraint firstItem="V98-0t-BOj" firstAttribute="centerX" secondItem="gLj-0p-3VL" secondAttribute="centerX" constant="8" id="Wy7-qq-rHC"/>
@@ -73,7 +73,7 @@
                         <constraint firstAttribute="bottom" secondItem="gLj-0p-3VL" secondAttribute="bottom" constant="5" id="Do9-jy-Ba0"/>
                         <constraint firstAttribute="bottom" secondItem="WB0-sq-4Vg" secondAttribute="bottom" constant="12" id="HA5-xk-Tiy"/>
                         <constraint firstAttribute="height" constant="64" id="O66-ye-6Al"/>
-                        <constraint firstItem="gLj-0p-3VL" firstAttribute="leading" secondItem="7CL-Bf-N6j" secondAttribute="trailing" constant="20" id="Qhb-eh-vgO"/>
+                        <constraint firstItem="gLj-0p-3VL" firstAttribute="leading" secondItem="7CL-Bf-N6j" secondAttribute="trailing" constant="15" id="Qhb-eh-vgO"/>
                         <constraint firstItem="WB0-sq-4Vg" firstAttribute="leading" secondItem="KZF-vi-kVS" secondAttribute="leading" constant="10" id="byh-It-p2I"/>
                         <constraint firstAttribute="trailing" secondItem="gLj-0p-3VL" secondAttribute="trailing" constant="10" id="cit-hX-5nc"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="d1x-n0-oaG"/>
@@ -118,6 +118,7 @@
             <connections>
                 <outlet property="basesearchV" destination="KZF-vi-kVS" id="oSf-AT-lZv"/>
                 <outlet property="pageView" destination="llR-Xe-O16" id="cck-h8-aIl"/>
+                <outlet property="placelb" destination="7CL-Bf-N6j" id="CxV-ZT-IBM"/>
                 <outlet property="scrollView" destination="XXK-QN-TKu" id="fVU-Te-Yub"/>
                 <outlet property="search" destination="gLj-0p-3VL" id="7PV-i4-DRw"/>
             </connections>

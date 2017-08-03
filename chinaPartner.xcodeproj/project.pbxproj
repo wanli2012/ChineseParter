@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A750E3D1F287EA0002B7244 /* GLBusiness_PreferredController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A750E3A1F287EA0002B7244 /* GLBusiness_PreferredController.m */; };
 		4A750E3E1F287EA0002B7244 /* GLBusiness_PreferredController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A750E3B1F287EA0002B7244 /* GLBusiness_PreferredController.xib */; };
+		6B25011EAC600359CB2FBC0A /* Pods_chinaPartner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1231942474592F28322A2F /* Pods_chinaPartner.framework */; };
 		F90AE36D1F2841A500DCF645 /* LBMineListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90AE36B1F2841A500DCF645 /* LBMineListTableViewCell.swift */; };
 		F90AE36E1F2841A500DCF645 /* LBMineListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F90AE36C1F2841A500DCF645 /* LBMineListTableViewCell.xib */; };
 		F946F5A11F2883EB0091A503 /* LBAddNewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F946F59F1F2883EB0091A503 /* LBAddNewProjectViewController.swift */; };
@@ -43,6 +44,11 @@
 		F96C019F1F29799A007029C6 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96C019E1F29799A007029C6 /* UIColor-Extension.swift */; };
 		F96C01AD1F297D0A007029C6 /* LBProjectShowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96C01AB1F297D0A007029C6 /* LBProjectShowListViewController.swift */; };
 		F96C01AE1F297D0A007029C6 /* LBProjectShowListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96C01AC1F297D0A007029C6 /* LBProjectShowListViewController.xib */; };
+		F96F91661F2C16710078C8D9 /* predicateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F96F91651F2C16710078C8D9 /* predicateModel.m */; };
+		F96F916A1F2C20670078C8D9 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F96F91691F2C20670078C8D9 /* RSAEncryptor.m */; };
+		F96F916E1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96F916C1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.m */; };
+		F96F916F1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F96F916D1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.xib */; };
+		F96F91721F2C7F300078C8D9 /* editorMaskPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96F91711F2C7F300078C8D9 /* editorMaskPresentationController.m */; };
 		F974C8EA1F26F1AD00A4B029 /* LBServiceClassify.xib in Resources */ = {isa = PBXBuildFile; fileRef = F974C8E91F26F1AD00A4B029 /* LBServiceClassify.xib */; };
 		F974C8EC1F26F22800A4B029 /* LBServiceClassify.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974C8EB1F26F22800A4B029 /* LBServiceClassify.swift */; };
 		F974C8EF1F273C0D00A4B029 /* LBBusinessOpportunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974C8ED1F273C0D00A4B029 /* LBBusinessOpportunityTableViewCell.swift */; };
@@ -57,6 +63,10 @@
 		F974C9011F275AB100A4B029 /* Mine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F974C9001F275AB100A4B029 /* Mine.xcassets */; };
 		F974C9051F27612500A4B029 /* LBMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F974C9041F27612500A4B029 /* LBMineHeaderView.swift */; };
 		F974C9071F27613500A4B029 /* LBMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F974C9061F27613500A4B029 /* LBMineHeaderView.xib */; };
+		F97576421F31701F00D62A4C /* GLNearby_SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = F97576401F31701F00D62A4C /* GLNearby_SearchController.m */; };
+		F97576431F31701F00D62A4C /* GLNearby_SearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97576411F31701F00D62A4C /* GLNearby_SearchController.xib */; };
+		F97576471F31731B00D62A4C /* NodataView.m in Sources */ = {isa = PBXBuildFile; fileRef = F97576451F31731B00D62A4C /* NodataView.m */; };
+		F97576481F31731B00D62A4C /* NodataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97576461F31731B00D62A4C /* NodataView.xib */; };
 		F976AB8D1F2AC917005CF5E3 /* GLRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = F976AB891F2AC917005CF5E3 /* GLRegisterController.m */; };
 		F976AB8E1F2AC917005CF5E3 /* GLRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F976AB8A1F2AC917005CF5E3 /* GLRegisterController.xib */; };
 		F976AB9B1F2AC94F005CF5E3 /* GLBusiness_DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = F976AB921F2AC94F005CF5E3 /* GLBusiness_DetailController.m */; };
@@ -73,6 +83,30 @@
 		F976ABB11F2B04FB005CF5E3 /* LBPerfectInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F976ABAF1F2B04FB005CF5E3 /* LBPerfectInformationViewController.xib */; };
 		F976ABB51F2B0547005CF5E3 /* GLLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = F976ABB31F2B0547005CF5E3 /* GLLoginController.m */; };
 		F976ABB61F2B0547005CF5E3 /* GLLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F976ABB41F2B0547005CF5E3 /* GLLoginController.xib */; };
+		F976ABBC1F2B1BB7005CF5E3 /* LBCustomGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F976ABBB1F2B1BB7005CF5E3 /* LBCustomGifHeader.m */; };
+		F976ABD01F2B31B0005CF5E3 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F976ABCF1F2B31B0005CF5E3 /* NetworkManager.m */; };
+		F976ABD51F2B31CD005CF5E3 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F976ABD21F2B31CD005CF5E3 /* UserModel.m */; };
+		F976ABD61F2B31CD005CF5E3 /* usermodelachivar.m in Sources */ = {isa = PBXBuildFile; fileRef = F976ABD41F2B31CD005CF5E3 /* usermodelachivar.m */; };
+		F976ABDA1F2B3308005CF5E3 /* LoadWaitView.m in Sources */ = {isa = PBXBuildFile; fileRef = F976ABD81F2B3308005CF5E3 /* LoadWaitView.m */; };
+		F976ABDB1F2B3308005CF5E3 /* LoadWaitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F976ABD91F2B3308005CF5E3 /* LoadWaitView.xib */; };
+		F976AC891F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F976AC861F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.bundle */; };
+		F976AC8A1F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.m in Sources */ = {isa = PBXBuildFile; fileRef = F976AC881F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.m */; };
+		F976AC901F2B4274005CF5E3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F976AC8C1F2B4274005CF5E3 /* LICENSE */; };
+		F976AC911F2B4274005CF5E3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F976AC8E1F2B4274005CF5E3 /* MBProgressHUD.m */; };
+		F976AC921F2B4274005CF5E3 /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = F976AC8F1F2B4274005CF5E3 /* README.mdown */; };
+		F976B08D1F2F251300A99276 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B08C1F2F251300A99276 /* Security.framework */; };
+		F976B08F1F2F252100A99276 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B08E1F2F252000A99276 /* libstdc++.tbd */; };
+		F976B0911F2F252800A99276 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B0901F2F252800A99276 /* libz.tbd */; };
+		F976B0931F2F253000A99276 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B0921F2F253000A99276 /* SystemConfiguration.framework */; };
+		F976B0951F2F253B00A99276 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B0941F2F253B00A99276 /* CoreTelephony.framework */; };
+		F976B0971F2F254700A99276 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B0961F2F254700A99276 /* CoreLocation.framework */; };
+		F976B0991F2F255A00A99276 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B0981F2F255A00A99276 /* OpenGLES.framework */; };
+		F976B09B1F2F256400A99276 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B09A1F2F256400A99276 /* QuartzCore.framework */; };
+		F976B09D1F2F25CD00A99276 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B09C1F2F25CD00A99276 /* CoreFoundation.framework */; };
+		F976B09F1F2F25DA00A99276 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B09E1F2F25DA00A99276 /* Foundation.framework */; };
+		F976B0A11F2F25E400A99276 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B0A01F2F25E400A99276 /* UIKit.framework */; };
+		F976B0A31F2F260B00A99276 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F976B0A21F2F260B00A99276 /* MapKit.framework */; };
+		F994EB071F3077C3002A49B3 /* formattime.m in Sources */ = {isa = PBXBuildFile; fileRef = F994EB061F3077C3002A49B3 /* formattime.m */; };
 		F9BF4CE61F29D04B009524A8 /* PageManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF4CE41F29D04B009524A8 /* PageManagerVC.swift */; };
 		F9BF4CE71F29D04B009524A8 /* VCManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BF4CE51F29D04B009524A8 /* VCManagerView.swift */; };
 		F9BF4D0B1F29D1BC009524A8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F9BF4CE91F29D1BC009524A8 /* LICENSE */; };
@@ -132,9 +166,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BCEFD1E37DBBED90846795C /* Pods-chinaPartner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chinaPartner.release.xcconfig"; path = "Pods/Target Support Files/Pods-chinaPartner/Pods-chinaPartner.release.xcconfig"; sourceTree = "<group>"; };
+		3D1231942474592F28322A2F /* Pods_chinaPartner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chinaPartner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A750E391F287EA0002B7244 /* GLBusiness_PreferredController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBusiness_PreferredController.h; sourceTree = "<group>"; };
 		4A750E3A1F287EA0002B7244 /* GLBusiness_PreferredController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLBusiness_PreferredController.m; sourceTree = "<group>"; };
 		4A750E3B1F287EA0002B7244 /* GLBusiness_PreferredController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLBusiness_PreferredController.xib; sourceTree = "<group>"; };
+		C85D03E9E956D6CAE7DBBA8E /* Pods-chinaPartner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chinaPartner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chinaPartner/Pods-chinaPartner.debug.xcconfig"; sourceTree = "<group>"; };
 		F90AE36B1F2841A500DCF645 /* LBMineListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBMineListTableViewCell.swift; sourceTree = "<group>"; };
 		F90AE36C1F2841A500DCF645 /* LBMineListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBMineListTableViewCell.xib; sourceTree = "<group>"; };
 		F946F59F1F2883EB0091A503 /* LBAddNewProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBAddNewProjectViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +217,15 @@
 		F96C019E1F29799A007029C6 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		F96C01AB1F297D0A007029C6 /* LBProjectShowListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBProjectShowListViewController.swift; sourceTree = "<group>"; };
 		F96C01AC1F297D0A007029C6 /* LBProjectShowListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBProjectShowListViewController.xib; sourceTree = "<group>"; };
+		F96F91641F2C16710078C8D9 /* predicateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = predicateModel.h; sourceTree = "<group>"; };
+		F96F91651F2C16710078C8D9 /* predicateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = predicateModel.m; sourceTree = "<group>"; };
+		F96F91681F2C20670078C8D9 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		F96F91691F2C20670078C8D9 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		F96F916B1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBAddrecomdManChooseAreaViewController.h; sourceTree = "<group>"; };
+		F96F916C1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBAddrecomdManChooseAreaViewController.m; sourceTree = "<group>"; };
+		F96F916D1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBAddrecomdManChooseAreaViewController.xib; sourceTree = "<group>"; };
+		F96F91701F2C7F300078C8D9 /* editorMaskPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = editorMaskPresentationController.h; sourceTree = "<group>"; };
+		F96F91711F2C7F300078C8D9 /* editorMaskPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = editorMaskPresentationController.m; sourceTree = "<group>"; };
 		F974C8E91F26F1AD00A4B029 /* LBServiceClassify.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBServiceClassify.xib; sourceTree = "<group>"; };
 		F974C8EB1F26F22800A4B029 /* LBServiceClassify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBServiceClassify.swift; sourceTree = "<group>"; };
 		F974C8ED1F273C0D00A4B029 /* LBBusinessOpportunityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBBusinessOpportunityTableViewCell.swift; sourceTree = "<group>"; };
@@ -195,6 +241,12 @@
 		F974C9001F275AB100A4B029 /* Mine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mine.xcassets; sourceTree = "<group>"; };
 		F974C9041F27612500A4B029 /* LBMineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBMineHeaderView.swift; sourceTree = "<group>"; };
 		F974C9061F27613500A4B029 /* LBMineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBMineHeaderView.xib; sourceTree = "<group>"; };
+		F975763F1F31701F00D62A4C /* GLNearby_SearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLNearby_SearchController.h; sourceTree = "<group>"; };
+		F97576401F31701F00D62A4C /* GLNearby_SearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLNearby_SearchController.m; sourceTree = "<group>"; };
+		F97576411F31701F00D62A4C /* GLNearby_SearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLNearby_SearchController.xib; sourceTree = "<group>"; };
+		F97576441F31731B00D62A4C /* NodataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodataView.h; sourceTree = "<group>"; };
+		F97576451F31731B00D62A4C /* NodataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodataView.m; sourceTree = "<group>"; };
+		F97576461F31731B00D62A4C /* NodataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NodataView.xib; sourceTree = "<group>"; };
 		F976AB881F2AC917005CF5E3 /* GLRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRegisterController.h; sourceTree = "<group>"; };
 		F976AB891F2AC917005CF5E3 /* GLRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLRegisterController.m; sourceTree = "<group>"; };
 		F976AB8A1F2AC917005CF5E3 /* GLRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLRegisterController.xib; sourceTree = "<group>"; };
@@ -218,6 +270,38 @@
 		F976ABB21F2B0547005CF5E3 /* GLLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLoginController.h; sourceTree = "<group>"; };
 		F976ABB31F2B0547005CF5E3 /* GLLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLoginController.m; sourceTree = "<group>"; };
 		F976ABB41F2B0547005CF5E3 /* GLLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLLoginController.xib; sourceTree = "<group>"; };
+		F976ABBA1F2B1BB7005CF5E3 /* LBCustomGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBCustomGifHeader.h; sourceTree = "<group>"; };
+		F976ABBB1F2B1BB7005CF5E3 /* LBCustomGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCustomGifHeader.m; sourceTree = "<group>"; };
+		F976ABCE1F2B31B0005CF5E3 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		F976ABCF1F2B31B0005CF5E3 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		F976ABD11F2B31CD005CF5E3 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		F976ABD21F2B31CD005CF5E3 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		F976ABD31F2B31CD005CF5E3 /* usermodelachivar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usermodelachivar.h; sourceTree = "<group>"; };
+		F976ABD41F2B31CD005CF5E3 /* usermodelachivar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = usermodelachivar.m; sourceTree = "<group>"; };
+		F976ABD71F2B3308005CF5E3 /* LoadWaitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadWaitView.h; sourceTree = "<group>"; };
+		F976ABD81F2B3308005CF5E3 /* LoadWaitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadWaitView.m; sourceTree = "<group>"; };
+		F976ABD91F2B3308005CF5E3 /* LoadWaitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadWaitView.xib; sourceTree = "<group>"; };
+		F976AC861F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "MBProgressHUD+JDragon.bundle"; sourceTree = "<group>"; };
+		F976AC871F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JDragon.h"; sourceTree = "<group>"; };
+		F976AC881F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JDragon.m"; sourceTree = "<group>"; };
+		F976AC8C1F2B4274005CF5E3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F976AC8D1F2B4274005CF5E3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F976AC8E1F2B4274005CF5E3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F976AC8F1F2B4274005CF5E3 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		F976B08C1F2F251300A99276 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F976B08E1F2F252000A99276 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		F976B0901F2F252800A99276 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F976B0921F2F253000A99276 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F976B0941F2F253B00A99276 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F976B0961F2F254700A99276 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F976B0981F2F255A00A99276 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F976B09A1F2F256400A99276 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F976B09C1F2F25CD00A99276 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F976B09E1F2F25DA00A99276 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F976B0A01F2F25E400A99276 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F976B0A21F2F260B00A99276 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F994EB051F3077C3002A49B3 /* formattime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formattime.h; sourceTree = "<group>"; };
+		F994EB061F3077C3002A49B3 /* formattime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = formattime.m; sourceTree = "<group>"; };
 		F9BF4CE41F29D04B009524A8 /* PageManagerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageManagerVC.swift; sourceTree = "<group>"; };
 		F9BF4CE51F29D04B009524A8 /* VCManagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCManagerView.swift; sourceTree = "<group>"; };
 		F9BF4CE91F29D1BC009524A8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -264,6 +348,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F976B0A31F2F260B00A99276 /* MapKit.framework in Frameworks */,
+				F976B0A11F2F25E400A99276 /* UIKit.framework in Frameworks */,
+				F976B09F1F2F25DA00A99276 /* Foundation.framework in Frameworks */,
+				F976B09D1F2F25CD00A99276 /* CoreFoundation.framework in Frameworks */,
+				F976B09B1F2F256400A99276 /* QuartzCore.framework in Frameworks */,
+				F976B0991F2F255A00A99276 /* OpenGLES.framework in Frameworks */,
+				F976B0971F2F254700A99276 /* CoreLocation.framework in Frameworks */,
+				F976B0951F2F253B00A99276 /* CoreTelephony.framework in Frameworks */,
+				F976B0931F2F253000A99276 /* SystemConfiguration.framework in Frameworks */,
+				F976B0911F2F252800A99276 /* libz.tbd in Frameworks */,
+				F976B08F1F2F252100A99276 /* libstdc++.tbd in Frameworks */,
+				F976B08D1F2F251300A99276 /* Security.framework in Frameworks */,
+				6B25011EAC600359CB2FBC0A /* Pods_chinaPartner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +410,35 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		71F5B4BA0E4C456530CE8882 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C85D03E9E956D6CAE7DBBA8E /* Pods-chinaPartner.debug.xcconfig */,
+				0BCEFD1E37DBBED90846795C /* Pods-chinaPartner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		921864FC878DF421D80CADBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F976B0A21F2F260B00A99276 /* MapKit.framework */,
+				F976B0A01F2F25E400A99276 /* UIKit.framework */,
+				F976B09E1F2F25DA00A99276 /* Foundation.framework */,
+				F976B09C1F2F25CD00A99276 /* CoreFoundation.framework */,
+				F976B09A1F2F256400A99276 /* QuartzCore.framework */,
+				F976B0981F2F255A00A99276 /* OpenGLES.framework */,
+				F976B0961F2F254700A99276 /* CoreLocation.framework */,
+				F976B0941F2F253B00A99276 /* CoreTelephony.framework */,
+				F976B0921F2F253000A99276 /* SystemConfiguration.framework */,
+				F976B0901F2F252800A99276 /* libz.tbd */,
+				F976B08E1F2F252000A99276 /* libstdc++.tbd */,
+				F976B08C1F2F251300A99276 /* Security.framework */,
+				3D1231942474592F28322A2F /* Pods_chinaPartner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F946F59D1F2880FE0091A503 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +461,8 @@
 				F95AE3011F258E4300946B37 /* chinaPartnerTests */,
 				F95AE30C1F258E4400946B37 /* chinaPartnerUITests */,
 				F95AE2E61F258E4300946B37 /* Products */,
+				71F5B4BA0E4C456530CE8882 /* Pods */,
+				921864FC878DF421D80CADBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -355,8 +483,8 @@
 				F95AE2EC1F258E4300946B37 /* AppDelegate.m */,
 				F95AE2EE1F258E4300946B37 /* ViewController.h */,
 				F95AE2EF1F258E4300946B37 /* ViewController.m */,
-				F95AE31B1F25900900946B37 /* network */,
-				F95AE31C1F25900900946B37 /* dataSave */,
+				F976ABCC1F2B31A2005CF5E3 /* NetWork */,
+				F976ABCD1F2B31A2005CF5E3 /* DataSava */,
 				F95AE31D1F25900900946B37 /* threeParts */,
 				F95AE31E1F25900900946B37 /* tools */,
 				F976AB801F2AC917005CF5E3 /* loginAndRegister */,
@@ -405,23 +533,12 @@
 			path = chinaPartnerUITests;
 			sourceTree = "<group>";
 		};
-		F95AE31B1F25900900946B37 /* network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = network;
-			sourceTree = "<group>";
-		};
-		F95AE31C1F25900900946B37 /* dataSave */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = dataSave;
-			sourceTree = "<group>";
-		};
 		F95AE31D1F25900900946B37 /* threeParts */ = {
 			isa = PBXGroup;
 			children = (
+				F96F91671F2C20670078C8D9 /* RSA密钥 */,
+				F976AC8B1F2B4274005CF5E3 /* MBProgressHUD */,
+				F976AC851F2B3AC5005CF5E3 /* MBProgressHUD+JDragon */,
 				F9BF4CE81F29D1BC009524A8 /* SnapKit */,
 			);
 			path = threeParts;
@@ -437,6 +554,18 @@
 				F9BF4D2E1F29D2B9009524A8 /* NSString+Extension.swift */,
 				F976ABA41F2ACA53005CF5E3 /* UIView+category.h */,
 				F976ABA51F2ACA53005CF5E3 /* UIView+category.m */,
+				F976ABBA1F2B1BB7005CF5E3 /* LBCustomGifHeader.h */,
+				F976ABBB1F2B1BB7005CF5E3 /* LBCustomGifHeader.m */,
+				F976ABD71F2B3308005CF5E3 /* LoadWaitView.h */,
+				F976ABD81F2B3308005CF5E3 /* LoadWaitView.m */,
+				F976ABD91F2B3308005CF5E3 /* LoadWaitView.xib */,
+				F96F91641F2C16710078C8D9 /* predicateModel.h */,
+				F96F91651F2C16710078C8D9 /* predicateModel.m */,
+				F994EB051F3077C3002A49B3 /* formattime.h */,
+				F994EB061F3077C3002A49B3 /* formattime.m */,
+				F97576441F31731B00D62A4C /* NodataView.h */,
+				F97576451F31731B00D62A4C /* NodataView.m */,
+				F97576461F31731B00D62A4C /* NodataView.xib */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -446,6 +575,9 @@
 			children = (
 				F95AE3251F2590C000946B37 /* LBEnterpriseViewController.swift */,
 				F95AE3261F2590C000946B37 /* LBEnterpriseViewController.xib */,
+				F975763F1F31701F00D62A4C /* GLNearby_SearchController.h */,
+				F97576401F31701F00D62A4C /* GLNearby_SearchController.m */,
+				F97576411F31701F00D62A4C /* GLNearby_SearchController.xib */,
 				F95AE34B1F25D95600946B37 /* model */,
 				F95AE34C1F25D95600946B37 /* view */,
 			);
@@ -474,6 +606,11 @@
 				F946F5A01F2883EB0091A503 /* LBAddNewProjectViewController.xib */,
 				F946F5A31F2892350091A503 /* LBEssentialInformationViewController.swift */,
 				F946F5A41F2892350091A503 /* LBEssentialInformationViewController.xib */,
+				F96F916B1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.h */,
+				F96F916C1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.m */,
+				F96F916D1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.xib */,
+				F96F91701F2C7F300078C8D9 /* editorMaskPresentationController.h */,
+				F96F91711F2C7F300078C8D9 /* editorMaskPresentationController.m */,
 				F946F59D1F2880FE0091A503 /* model */,
 				F946F59E1F2880FE0091A503 /* view */,
 			);
@@ -557,6 +694,15 @@
 				F974C8FD1F274E3800A4B029 /* LBCheckMoreTableViewCell.xib */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		F96F91671F2C20670078C8D9 /* RSA密钥 */ = {
+			isa = PBXGroup;
+			children = (
+				F96F91681F2C20670078C8D9 /* RSAEncryptor.h */,
+				F96F91691F2C20670078C8D9 /* RSAEncryptor.m */,
+			);
+			path = "RSA密钥";
 			sourceTree = "<group>";
 		};
 		F974C9021F2760E800A4B029 /* model */ = {
@@ -654,6 +800,47 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F976ABCC1F2B31A2005CF5E3 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				F976ABCE1F2B31B0005CF5E3 /* NetworkManager.h */,
+				F976ABCF1F2B31B0005CF5E3 /* NetworkManager.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		F976ABCD1F2B31A2005CF5E3 /* DataSava */ = {
+			isa = PBXGroup;
+			children = (
+				F976ABD11F2B31CD005CF5E3 /* UserModel.h */,
+				F976ABD21F2B31CD005CF5E3 /* UserModel.m */,
+				F976ABD31F2B31CD005CF5E3 /* usermodelachivar.h */,
+				F976ABD41F2B31CD005CF5E3 /* usermodelachivar.m */,
+			);
+			path = DataSava;
+			sourceTree = "<group>";
+		};
+		F976AC851F2B3AC5005CF5E3 /* MBProgressHUD+JDragon */ = {
+			isa = PBXGroup;
+			children = (
+				F976AC861F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.bundle */,
+				F976AC871F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.h */,
+				F976AC881F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.m */,
+			);
+			path = "MBProgressHUD+JDragon";
+			sourceTree = "<group>";
+		};
+		F976AC8B1F2B4274005CF5E3 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F976AC8C1F2B4274005CF5E3 /* LICENSE */,
+				F976AC8D1F2B4274005CF5E3 /* MBProgressHUD.h */,
+				F976AC8E1F2B4274005CF5E3 /* MBProgressHUD.m */,
+				F976AC8F1F2B4274005CF5E3 /* README.mdown */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		F9BF4CE31F29D04B009524A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,9 +905,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F95AE3121F258E4400946B37 /* Build configuration list for PBXNativeTarget "chinaPartner" */;
 			buildPhases = (
+				63B0EE174FF2D8093F223FC8 /* [CP] Check Pods Manifest.lock */,
 				F95AE2E11F258E4300946B37 /* Sources */,
 				F95AE2E21F258E4300946B37 /* Frameworks */,
 				F95AE2E31F258E4300946B37 /* Resources */,
+				3123DEBA0373915C5578286B /* [CP] Embed Pods Frameworks */,
+				00F1F67907D118BE8DC622CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -781,6 +971,11 @@
 						DevelopmentTeam = GCU762TQ3E;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F95AE2FD1F258E4300946B37 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -825,6 +1020,7 @@
 				F976ABB61F2B0547005CF5E3 /* GLLoginController.xib in Resources */,
 				F974C8F01F273C0D00A4B029 /* LBBusinessOpportunityTableViewCell.xib in Resources */,
 				F95AE32C1F25913800946B37 /* LBBusinessOpportunityViewController.xib in Resources */,
+				F976AC901F2B4274005CF5E3 /* LICENSE in Resources */,
 				F974C8FB1F274BA400A4B029 /* LBProjectExchangeTableViewCell.xib in Resources */,
 				F96C01AE1F297D0A007029C6 /* LBProjectShowListViewController.xib in Resources */,
 				F95AE2F81F258E4300946B37 /* LaunchScreen.storyboard in Resources */,
@@ -833,11 +1029,13 @@
 				F974C8F71F27486D00A4B029 /* LBVariousActivitiesTableViewCell.xib in Resources */,
 				F974C9071F27613500A4B029 /* LBMineHeaderView.xib in Resources */,
 				F974C9011F275AB100A4B029 /* Mine.xcassets in Resources */,
+				F96F916F1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.xib in Resources */,
 				F95AE2F51F258E4300946B37 /* Assets.xcassets in Resources */,
 				F95AE3301F25915400946B37 /* LBProjectViewController.xib in Resources */,
 				F976AB9C1F2AC94F005CF5E3 /* GLBusiness_DetailController.xib in Resources */,
 				F974C8EA1F26F1AD00A4B029 /* LBServiceClassify.xib in Resources */,
 				F976ABAB1F2ACADE005CF5E3 /* GLBusiness_ChooseController.xib in Resources */,
+				F97576481F31731B00D62A4C /* NodataView.xib in Resources */,
 				F946F5A21F2883EB0091A503 /* LBAddNewProjectViewController.xib in Resources */,
 				F976ABB11F2B04FB005CF5E3 /* LBPerfectInformationViewController.xib in Resources */,
 				F95AE3481F25C7CD00946B37 /* tabbarSource.xcassets in Resources */,
@@ -846,10 +1044,13 @@
 				F946F5A61F2892350091A503 /* LBEssentialInformationViewController.xib in Resources */,
 				F95AE2F31F258E4300946B37 /* Main.storyboard in Resources */,
 				F976AB8E1F2AC917005CF5E3 /* GLRegisterController.xib in Resources */,
+				F97576431F31701F00D62A4C /* GLNearby_SearchController.xib in Resources */,
 				F9BF4D331F29D8C4009524A8 /* LBMineSetUpViewController.xib in Resources */,
 				F95AE3501F25D9A300946B37 /* LBEnterpriseHeaderView.xib in Resources */,
+				F976AC891F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.bundle in Resources */,
 				F95AE3381F25918C00946B37 /* LBMineViewController.xib in Resources */,
 				F974C8FF1F274E3800A4B029 /* LBCheckMoreTableViewCell.xib in Resources */,
+				F976ABDB1F2B3308005CF5E3 /* LoadWaitView.xib in Resources */,
 				F90AE36E1F2841A500DCF645 /* LBMineListTableViewCell.xib in Resources */,
 				F976ABAD1F2ACB88005CF5E3 /* LoginAndRegister.xcassets in Resources */,
 			);
@@ -871,6 +1072,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00F1F67907D118BE8DC622CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chinaPartner/Pods-chinaPartner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3123DEBA0373915C5578286B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chinaPartner/Pods-chinaPartner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63B0EE174FF2D8093F223FC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F95AE2E11F258E4300946B37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -879,6 +1128,7 @@
 				F946F5A51F2892350091A503 /* LBEssentialInformationViewController.swift in Sources */,
 				F9BF4D321F29D8C4009524A8 /* LBMineSetUpViewController.swift in Sources */,
 				F9BF4D0E1F29D1BC009524A8 /* ConstraintAttributes.swift in Sources */,
+				F976ABD51F2B31CD005CF5E3 /* UserModel.m in Sources */,
 				F9BF4D1D1F29D1BC009524A8 /* ConstraintMakerFinalizable.swift in Sources */,
 				F9BF4D151F29D1BC009524A8 /* ConstraintItem.swift in Sources */,
 				F976AB8D1F2AC917005CF5E3 /* GLRegisterController.m in Sources */,
@@ -892,32 +1142,43 @@
 				F974C8F31F273EED00A4B029 /* UIButton+SetEdgeInsets.m in Sources */,
 				F95AE2F01F258E4300946B37 /* ViewController.m in Sources */,
 				F9BF4D2B1F29D1BC009524A8 /* UILayoutSupport+Extensions.swift in Sources */,
+				F976ABD01F2B31B0005CF5E3 /* NetworkManager.m in Sources */,
 				F976ABB51F2B0547005CF5E3 /* GLLoginController.m in Sources */,
 				F9BF4D221F29D1BC009524A8 /* ConstraintPriorityTarget.swift in Sources */,
 				F9BF4D0F1F29D1BC009524A8 /* ConstraintConfig.swift in Sources */,
+				F976ABD61F2B31CD005CF5E3 /* usermodelachivar.m in Sources */,
 				F95AE33D1F25957F00946B37 /* basenavagationViewController.swift in Sources */,
 				F9BF4D0D1F29D1BC009524A8 /* Constraint.swift in Sources */,
 				F9BF4D171F29D1BC009524A8 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				F96F916E1F2C7B6D0078C8D9 /* LBAddrecomdManChooseAreaViewController.m in Sources */,
 				F976ABA61F2ACA53005CF5E3 /* UIView+category.m in Sources */,
 				F95AE2ED1F258E4300946B37 /* AppDelegate.m in Sources */,
 				F974C8FE1F274E3800A4B029 /* LBCheckMoreTableViewCell.swift in Sources */,
 				F95AE33E1F25957F00946B37 /* rootTableViewController.swift in Sources */,
 				F9BF4D1C1F29D1BC009524A8 /* ConstraintMakerExtendable.swift in Sources */,
+				F994EB071F3077C3002A49B3 /* formattime.m in Sources */,
 				F9BF4D281F29D1BC009524A8 /* Debugging.swift in Sources */,
 				F95AE32F1F25915400946B37 /* LBProjectViewController.swift in Sources */,
 				F96C01AD1F297D0A007029C6 /* LBProjectShowListViewController.swift in Sources */,
+				F96F91721F2C7F300078C8D9 /* editorMaskPresentationController.m in Sources */,
+				F976ABBC1F2B1BB7005CF5E3 /* LBCustomGifHeader.m in Sources */,
 				F9BF4D2D1F29D296009524A8 /* UIView+Extension.swift in Sources */,
 				F9BF4D261F29D1BC009524A8 /* ConstraintView.swift in Sources */,
 				F9BF4D211F29D1BC009524A8 /* ConstraintOffsetTarget.swift in Sources */,
+				F96F91661F2C16710078C8D9 /* predicateModel.m in Sources */,
 				F976ABB01F2B04FB005CF5E3 /* LBPerfectInformationViewController.swift in Sources */,
 				F9BF4D0C1F29D1BC009524A8 /* README.md in Sources */,
+				F976AC921F2B4274005CF5E3 /* README.mdown in Sources */,
 				F95AE34E1F25D98900946B37 /* LBEnterpriseHeaderView.swift in Sources */,
 				F9BF4D201F29D1BC009524A8 /* ConstraintMultiplierTarget.swift in Sources */,
 				F95AE3371F25918C00946B37 /* LBMineViewController.swift in Sources */,
 				F9BF4D241F29D1BC009524A8 /* ConstraintRelation.swift in Sources */,
 				F95AE3331F25917400946B37 /* LBCircleViewController.swift in Sources */,
 				F976ABAA1F2ACADE005CF5E3 /* GLBusiness_ChooseController.m in Sources */,
+				F976ABDA1F2B3308005CF5E3 /* LoadWaitView.m in Sources */,
 				F9BF4D111F29D1BC009524A8 /* ConstraintDescription.swift in Sources */,
+				F976AC8A1F2B3AC5005CF5E3 /* MBProgressHUD+JDragon.m in Sources */,
+				F976AC911F2B4274005CF5E3 /* MBProgressHUD.m in Sources */,
 				F9BF4CE71F29D04B009524A8 /* VCManagerView.swift in Sources */,
 				F95AE32B1F25913800946B37 /* LBBusinessOpportunityViewController.swift in Sources */,
 				F9BF4D191F29D1BC009524A8 /* ConstraintLayoutSupportDSL.swift in Sources */,
@@ -930,12 +1191,15 @@
 				F9BF4D291F29D1BC009524A8 /* LayoutConstraint.swift in Sources */,
 				F974C8EF1F273C0D00A4B029 /* LBBusinessOpportunityTableViewCell.swift in Sources */,
 				F9BF4CE61F29D04B009524A8 /* PageManagerVC.swift in Sources */,
+				F97576471F31731B00D62A4C /* NodataView.m in Sources */,
 				F90AE36D1F2841A500DCF645 /* LBMineListTableViewCell.swift in Sources */,
 				F95AE3271F2590C000946B37 /* LBEnterpriseViewController.swift in Sources */,
 				F976AB9B1F2AC94F005CF5E3 /* GLBusiness_DetailController.m in Sources */,
 				F96C019F1F29799A007029C6 /* UIColor-Extension.swift in Sources */,
 				F9BF4D181F29D1BC009524A8 /* ConstraintLayoutSupport.swift in Sources */,
+				F97576421F31701F00D62A4C /* GLNearby_SearchController.m in Sources */,
 				F9BF4D1B1F29D1BC009524A8 /* ConstraintMakerEditable.swift in Sources */,
+				F96F916A1F2C20670078C8D9 /* RSAEncryptor.m in Sources */,
 				F9BF4D251F29D1BC009524A8 /* ConstraintView+Extensions.swift in Sources */,
 				F95AE3531F25E32400946B37 /* headerpch.swift in Sources */,
 				F9BF4D231F29D1BC009524A8 /* ConstraintRelatableTarget.swift in Sources */,
@@ -1094,12 +1358,14 @@
 		};
 		F95AE3131F258E4400946B37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85D03E9E956D6CAE7DBBA8E /* Pods-chinaPartner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GCU762TQ3E;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/chinaPartner/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = chinaPartner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1113,12 +1379,14 @@
 		};
 		F95AE3141F258E4400946B37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BCEFD1E37DBBED90846795C /* Pods-chinaPartner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GCU762TQ3E;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/chinaPartner/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = chinaPartner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -33,7 +33,7 @@
                     <rect key="frame" x="30" y="100" width="260" height="406"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhh-Gs-cl6">
-                            <rect key="frame" x="80" y="343" width="100" height="33"/>
+                            <rect key="frame" x="80" y="360" width="100" height="33"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="lYt-s5-M6a"/>
                             </constraints>
@@ -46,7 +46,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iW5-I1-Tq0">
-                            <rect key="frame" x="190" y="348" width="40" height="28"/>
+                            <rect key="frame" x="190" y="365" width="40" height="28"/>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="登录">
                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,7 +69,10 @@
                                     <rect key="frame" x="10" y="10" width="190" height="39"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="BJh-nk-Ghp"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -102,15 +105,18 @@
                                     </constraints>
                                 </view>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4UO-EF-ya0">
-                                    <rect key="frame" x="10" y="10" width="105" height="39"/>
+                                    <rect key="frame" x="10" y="10" width="100" height="39"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="qVa-hZ-cjj"/>
+                                    </connections>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hn1-3V-dsz">
-                                    <rect key="frame" x="120" y="15" width="80" height="29"/>
+                                    <rect key="frame" x="115" y="15" width="85" height="29"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="80" id="7IK-8a-aqY"/>
+                                        <constraint firstAttribute="width" constant="85" id="7IK-8a-aqY"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                     <state key="normal" title="获取验证码">
@@ -150,7 +156,10 @@
                                     <rect key="frame" x="10" y="10" width="190" height="39"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="gWq-wO-4fk"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -179,7 +188,10 @@
                                     <rect key="frame" x="10" y="10" width="190" height="39"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Mon-ne-g9S"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,6 +206,15 @@
                                 <constraint firstAttribute="height" constant="50" id="wMh-nA-i5M"/>
                             </constraints>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示: 密码至少必须包含数字、字母、特殊符号其中两种组合，不能有空格不能小于6位大于16位" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cL-Jl-Y8k">
+                            <rect key="frame" x="30" y="335" width="200" height="21.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="sw4-O6-7xK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" red="0.99922853708267212" green="0.18253469467163086" blue="0.1952151358127594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -211,11 +232,14 @@
                         <constraint firstItem="B4A-SV-i80" firstAttribute="leading" secondItem="ykr-0a-Lsm" secondAttribute="leading" constant="30" id="XWP-pn-M8b"/>
                         <constraint firstItem="WMI-WS-KzO" firstAttribute="leading" secondItem="ykr-0a-Lsm" secondAttribute="leading" constant="30" id="aSj-yO-QXe"/>
                         <constraint firstAttribute="trailing" secondItem="WMI-WS-KzO" secondAttribute="trailing" constant="30" id="ckV-U0-0Fq"/>
-                        <constraint firstAttribute="bottom" secondItem="Rhh-Gs-cl6" secondAttribute="bottom" constant="30" id="eGK-7R-g1x"/>
                         <constraint firstItem="RHD-NV-lvw" firstAttribute="leading" secondItem="ykr-0a-Lsm" secondAttribute="leading" constant="30" id="hFo-Sh-8TU"/>
                         <constraint firstItem="WMI-WS-KzO" firstAttribute="top" secondItem="Fln-21-qgV" secondAttribute="bottom" constant="10" id="iuk-uj-bU2"/>
+                        <constraint firstItem="4cL-Jl-Y8k" firstAttribute="top" secondItem="RHD-NV-lvw" secondAttribute="bottom" constant="5" id="kyF-YN-3Dg"/>
+                        <constraint firstItem="4cL-Jl-Y8k" firstAttribute="trailing" secondItem="RHD-NV-lvw" secondAttribute="trailing" id="p3s-ZS-NmK"/>
+                        <constraint firstItem="4cL-Jl-Y8k" firstAttribute="leading" secondItem="RHD-NV-lvw" secondAttribute="leading" id="svV-iR-09e"/>
                         <constraint firstItem="Fln-21-qgV" firstAttribute="top" secondItem="ykr-0a-Lsm" secondAttribute="top" constant="20" id="twJ-wQ-Vj5"/>
                         <constraint firstItem="iW5-I1-Tq0" firstAttribute="leading" secondItem="Rhh-Gs-cl6" secondAttribute="trailing" constant="10" id="vN8-dc-2b0"/>
+                        <constraint firstItem="Rhh-Gs-cl6" firstAttribute="top" secondItem="RHD-NV-lvw" secondAttribute="bottom" constant="30" id="ye3-S4-H9o"/>
                     </constraints>
                 </view>
             </subviews>

@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LBEnterpriseViewController" customModule="chinaPartner" customModuleProvider="target">
             <connections>
                 <outlet property="baseSearchV" destination="9eP-Ts-z2Y" id="ciZ-Ww-LGw"/>
+                <outlet property="placelb" destination="yxa-rB-NRp" id="23p-mo-ZMn"/>
                 <outlet property="searchView" destination="Lno-O9-VtA" id="Akt-Nu-WKs"/>
                 <outlet property="tableview" destination="l46-Pv-B2A" id="SXE-RD-Ild"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -40,21 +41,20 @@
                                 <constraint firstAttribute="height" constant="18" id="Z7S-Vv-Vm0"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成都" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxa-rB-NRp">
-                            <rect key="frame" x="33" y="34" width="40" height="20"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxa-rB-NRp">
+                            <rect key="frame" x="33" y="34" width="0.0" height="20"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="40" id="NPn-ow-rxf"/>
                                 <constraint firstAttribute="height" constant="20" id="Sa2-me-0Ri"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lno-O9-VtA">
-                            <rect key="frame" x="93" y="29" width="272" height="30"/>
+                            <rect key="frame" x="48" y="29" width="317" height="30"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入企业、分类或商圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3t-nW-GXd">
-                                    <rect key="frame" x="82.5" y="5.5" width="123" height="20"/>
+                                    <rect key="frame" x="105" y="5.5" width="123" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="s5J-qc-nkM"/>
                                         <constraint firstAttribute="height" constant="20" id="zFP-yj-1T9"/>
@@ -64,7 +64,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="搜索" translatesAutoresizingMaskIntoConstraints="NO" id="Rlm-Np-Akn">
-                                    <rect key="frame" x="62.5" y="8.5" width="15" height="15"/>
+                                    <rect key="frame" x="85" y="8.5" width="15" height="15"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="15" id="kF7-X4-x72"/>
                                         <constraint firstAttribute="height" constant="15" id="l9R-gx-A7g"/>
@@ -72,6 +72,7 @@
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="8uj-Re-dcZ"/>
                                 <constraint firstItem="U3t-nW-GXd" firstAttribute="centerX" secondItem="Lno-O9-VtA" secondAttribute="centerX" constant="8" id="CEi-Nj-kad"/>
@@ -79,13 +80,16 @@
                                 <constraint firstItem="U3t-nW-GXd" firstAttribute="centerY" secondItem="Rlm-Np-Akn" secondAttribute="centerY" id="jGZ-Fd-S8K"/>
                                 <constraint firstItem="U3t-nW-GXd" firstAttribute="leading" secondItem="Rlm-Np-Akn" secondAttribute="trailing" constant="5" id="wC5-md-FLQ"/>
                             </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="TAR-D1-zxn" appends="YES" id="Q45-3f-ba0"/>
+                            </connections>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="Lno-O9-VtA" secondAttribute="bottom" constant="5" id="8xy-Fa-8D9"/>
                         <constraint firstAttribute="bottom" secondItem="X2C-Hk-eIs" secondAttribute="bottom" constant="12" id="Aus-K0-IrU"/>
-                        <constraint firstItem="Lno-O9-VtA" firstAttribute="leading" secondItem="yxa-rB-NRp" secondAttribute="trailing" constant="20" id="CL4-H2-eDZ"/>
+                        <constraint firstItem="Lno-O9-VtA" firstAttribute="leading" secondItem="yxa-rB-NRp" secondAttribute="trailing" constant="15" id="CL4-H2-eDZ"/>
                         <constraint firstItem="yxa-rB-NRp" firstAttribute="leading" secondItem="X2C-Hk-eIs" secondAttribute="trailing" constant="5" id="PdT-RQ-wfH"/>
                         <constraint firstItem="X2C-Hk-eIs" firstAttribute="leading" secondItem="9eP-Ts-z2Y" secondAttribute="leading" constant="10" id="SnP-Cc-DQA"/>
                         <constraint firstAttribute="trailing" secondItem="Lno-O9-VtA" secondAttribute="trailing" constant="10" id="Yzw-am-lkX"/>
@@ -106,6 +110,11 @@
             </constraints>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
+        <tapGestureRecognizer id="TAR-D1-zxn">
+            <connections>
+                <action selector="跳转搜索:" destination="-1" id="H2g-FH-8hb"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="定位" width="10" height="13"/>

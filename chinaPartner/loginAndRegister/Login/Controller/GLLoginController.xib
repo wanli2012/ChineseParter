@@ -31,9 +31,9 @@
                     <rect key="frame" x="30" y="100" width="260" height="398"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rC4-AM-6N7">
-                            <rect key="frame" x="80" y="335" width="100" height="33"/>
+                            <rect key="frame" x="85" y="335" width="90" height="33"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="100" id="tC9-FZ-6Qb"/>
+                                <constraint firstAttribute="width" constant="90" id="tC9-FZ-6Qb"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <state key="normal" title="登  录">
@@ -70,7 +70,10 @@
                                     <rect key="frame" x="10" y="10" width="190" height="39"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="FyN-p8-eV9"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,7 +109,10 @@
                                     <rect key="frame" x="10" y="10" width="190" height="39"/>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="cyw-9d-mgN"/>
+                                    </connections>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

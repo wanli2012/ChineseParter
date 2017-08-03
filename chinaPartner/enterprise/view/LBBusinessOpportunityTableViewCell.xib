@@ -53,16 +53,16 @@
                                     <action selector="clickMorebt:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xVy-6T-lZm"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15B-6N-hgd">
+                            <view hidden="YES" tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15B-6N-hgd">
                                 <rect key="frame" x="10" y="50" width="93.5" height="149.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="测试图片" translatesAutoresizingMaskIntoConstraints="NO" id="jM9-Yg-tz2">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jM9-Yg-tz2">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="93.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="jM9-Yg-tz2" secondAttribute="height" id="ifG-1l-xAH"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="必胜客" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEi-Li-oLF">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEi-Li-oLF">
                                         <rect key="frame" x="0.0" y="101.5" width="93.5" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="Vkd-kL-4B9"/>
@@ -71,7 +71,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9B-gs-M1e">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9B-gs-M1e">
                                         <rect key="frame" x="0.0" y="121.5" width="93.5" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="22d-FG-yTv"/>
@@ -94,16 +94,16 @@
                                     <constraint firstAttribute="trailing" secondItem="M9B-gs-M1e" secondAttribute="trailing" id="mAB-Vp-P7m"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkE-Ms-lKk">
+                            <view hidden="YES" tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkE-Ms-lKk">
                                 <rect key="frame" x="114" y="50" width="93.5" height="149.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="测试图片" translatesAutoresizingMaskIntoConstraints="NO" id="BuL-Lg-QZu">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="15" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BuL-Lg-QZu">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="93.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="BuL-Lg-QZu" secondAttribute="height" id="5vy-K2-j7f"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="必胜客" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqj-Vh-e6N">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="16" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqj-Vh-e6N">
                                         <rect key="frame" x="0.0" y="101.5" width="93.5" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="vVR-68-AwA"/>
@@ -112,7 +112,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXk-w9-7gn">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="17" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXk-w9-7gn">
                                         <rect key="frame" x="0.0" y="121.5" width="93.5" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="RzM-8W-VJH"/>
@@ -135,16 +135,16 @@
                                     <constraint firstItem="BuL-Lg-QZu" firstAttribute="top" secondItem="bkE-Ms-lKk" secondAttribute="top" id="p2x-5g-c3G"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtL-dX-Dmm">
+                            <view hidden="YES" tag="18" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtL-dX-Dmm">
                                 <rect key="frame" x="218" y="50" width="93.5" height="149.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="测试图片" translatesAutoresizingMaskIntoConstraints="NO" id="QYv-pb-yWa">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="19" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QYv-pb-yWa">
                                         <rect key="frame" x="0.0" y="0.0" width="93.5" height="93.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="QYv-pb-yWa" secondAttribute="height" id="tqf-8T-ZDE"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="必胜客" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxG-rs-zun">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxG-rs-zun">
                                         <rect key="frame" x="0.0" y="101.5" width="93.5" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="ks6-0g-n6g"/>
@@ -153,7 +153,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jK6-Bw-XPV">
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jK6-Bw-XPV">
                                         <rect key="frame" x="0.0" y="121.5" width="93.5" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="D5I-KQ-wbN"/>
@@ -220,7 +220,6 @@
     </objects>
     <resources>
         <image name="方向键" width="7" height="13"/>
-        <image name="测试图片" width="550" height="550"/>
         <image name="首页装饰三角" width="10" height="10"/>
     </resources>
 </document>

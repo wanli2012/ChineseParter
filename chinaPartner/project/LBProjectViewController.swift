@@ -38,7 +38,7 @@ class LBProjectViewController: UIViewController {
     
     lazy var subviewTitles:[String] = {
         
-        let array = ["全部", "审核中","审核失败","审核成功","垃圾"]
+        let array = ["已投放", "被驳回","未投放","审核中","被冻结","已过期"]
         return array
         
     }()
@@ -53,11 +53,23 @@ class LBProjectViewController: UIViewController {
         
     }()
     lazy var pageMagager:PageManagerVC = {
-        
-        let manager = PageManagerVC.init(superController: self, childControllerS: [LBProjectShowListViewController(),LBProjectShowListViewController(),LBProjectShowListViewController(),LBProjectShowListViewController(),LBProjectShowListViewController()])
+       
+        let manager = PageManagerVC.init(superController: self, childControllerS:self.vcArr)
         manager.delegate = self
         self.view.addSubview(manager.view)
         return manager
+        
+    }()
+    
+    lazy var vcArr:[UIViewController] = {
+        
+        var array:NSMutableArray = []
+        for i in 0..<6 {
+             let vc = LBProjectShowListViewController()
+            vc.type = i+1
+            array.add(vc)
+        }
+        return array as! [UIViewController]
         
     }()
  

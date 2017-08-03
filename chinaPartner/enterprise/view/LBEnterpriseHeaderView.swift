@@ -8,12 +8,18 @@
 
 import UIKit
 
+    @objc protocol LBEnterpriseHeaderViewdelegete {
+        func 点击首页分类(index:NSInteger)
+    }
+
 class LBEnterpriseHeaderView: UIView {
     
     @IBOutlet weak var search: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageView: UIPageControl!
     @IBOutlet weak var basesearchV: UIView!
+    @IBOutlet weak var placelb: UILabel!
+    weak var delegete: LBEnterpriseHeaderViewdelegete!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,8 +36,7 @@ class LBEnterpriseHeaderView: UIView {
     override func draw(_ rect: CGRect) {
      
         调用初始化方法()
-        scrollView.contentSize = CGSize(width: ScreenW * 2, height: self.scrollView.frame.size.height)
-        pageView.numberOfPages = 2;
+        pageView.numberOfPages = Int((self.arr.count - 1) / 8) + 1;
         pageView.currentPage = 0;
         pageView?.hidesForSinglePage = true
         //设置显示颜色
@@ -41,6 +46,11 @@ class LBEnterpriseHeaderView: UIView {
         scrollView.delegate = self;
         //添加事件
         pageView?.addTarget(self, action: #selector(LBEnterpriseHeaderView.pageControlChanged), for: UIControlEvents.valueChanged)
+        
+        self.placelb.mas_makeConstraints { (make:MASConstraintMaker?) in
+            make?.width.greaterThanOrEqualTo()(30)
+            make?.width.lessThanOrEqualTo()(80)
+        }
     }
     
     
@@ -54,27 +64,37 @@ class LBEnterpriseHeaderView: UIView {
         let padding_x:CGFloat = 20 //第一个距离边界多少px
         let item_dis:CGFloat = CGFloat(ScreenW - padding_x * 2 - 4 * itemW)
         let item_one:CGFloat = item_dis / (num - 1)  //分类之间的距离
+         scrollView.contentSize = CGSize(width: ScreenW * (CGFloat((self.arr.count - 1) / 8) + 1), height: self.scrollView.frame.size.height)
         
-        for i in self.arr.enumerated() {
+        for i in 0..<self.arr.count {
 
             //print(i.offset) 获取索引
             //print(i.element) 获取元素
             
             let   classfiyV:LBServiceClassify =  (Bundle.main.loadNibNamed("LBServiceClassify", owner: nil, options: nil)?.first as? LBServiceClassify)!
-            classfiyV.imageV.image = UIImage(named:self.imagarr[i.offset] as! String)
-            classfiyV.titleLb.text = self.arr[i.offset] as? String
+                  classfiyV.imageV.sd_setImage(with: URL(string: (self.arr[i] as! Dictionary<String, Any>)["pic"]! as! String)!, placeholderImage: UIImage(named: ""))
+            classfiyV.titleLb.text = ((self.arr[i] as! Dictionary<String, Any>)["trade_name"] as! String)
             classfiyV.titleLb.font = UIFont.systemFont(ofSize: 12 * autoSizeScaleX)
             classfiyV.backgroundColor = UIColor.clear
-            let a = i.offset / Int(num) //强制转化成int类型
-            let b = i.offset % Int(num) //强制转化成int类型
-            let c = Int(ScreenW) * (i.offset / 8) //分页
-            
+            let a = i / Int(num) //强制转化成int类型
+            let b = i % Int(num) //强制转化成int类型
+            let c = Int(ScreenW) * (i / 8) //分页
+            classfiyV.tag = 10 + i
             classfiyV.frame = CGRect(x:  CGFloat(c) + 20 + (itemW + item_one) * CGFloat(b), y: 20 + (10 + itemH) * CGFloat(a % 2), width: itemW , height: itemH)
 
+            let tap = UITapGestureRecognizer.init(target: self, action: #selector(LBEnterpriseHeaderView.点击每个分类))
+            classfiyV.addGestureRecognizer(tap)
+            
            self.scrollView.addSubview(classfiyV)
            
         }
         
+    }
+    
+    func 点击每个分类(gesture:UITapGestureRecognizer) -> Void {
+        
+        self.delegete.点击首页分类(index: (gesture.view?.tag)!)
+       
     }
     
     
@@ -89,7 +109,7 @@ class LBEnterpriseHeaderView: UIView {
     
     lazy var arr: Array <Any> = {
                var temporaryPlayers = Array<Any>()
-                     temporaryPlayers = ["餐饮加盟","建材加盟","美容保健","网络服务","数码电子","生活服务","家具环保","服务加盟","餐饮加盟","建材加盟","美容保健","网络服务","数码电子","生活服务","家具环保","服务加盟"]
+                     temporaryPlayers = []
               return temporaryPlayers
     }()
     

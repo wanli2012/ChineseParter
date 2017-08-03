@@ -12,11 +12,30 @@
 #import "chinaPartner-Swift.h"
 #import "LBGlobalariable.h"
 #import "UIView+category.h"
-
+#import <MJRefresh/MJRefresh.h>
+#import "LBCustomGifHeader.h"
+#import "MBProgressHUD+JDragon.h"
+#import "NetworkManager.h"
+#import "predicateModel.h"
+#import "UserModel.h"
+#import "usermodelachivar.h"
+#import "RSAEncryptor.h"
+#import <UIImageView+WebCache.m>
+#import <Masonry/Masonry.h>
+#import "formattime.h"
+#import "chinaPartner-Swift.h"
+#import "LoadWaitView.h"
+#import "NodataView.h"
+#import "LBCustomGifHeader.h"
 
 #define kSCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define kSCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
 
 #define YYSRGBColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define URL_Base @"http://192.168.0.154/Partner/index.php/App/"
+
+//公钥RSA
+#define public_RSA @"MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDqUts8BmlKlPweutFL3wt+AauNihByetYtAogy+sbwUhjOz1vWDu5NPjHawlAzN7SRTK4Gj8JQtPq+TDoubMZuKK9jup+jdQDp+YHJgJ1EzMjqzRjUoCrZdkEjy4v7gONJDS+ztpTeeRp3dCMesYIJFoPBMnWOuTOK8s11BBKSQwIDAQAB"
 
 #endif /* PrefixHeader_pch */

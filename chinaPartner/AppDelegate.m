@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "IQKeyboardManager.h"
 
 @interface AppDelegate ()
 
@@ -26,5 +27,13 @@
     return YES;
 }
 
+#pragma mark - 键盘高度处理
+- (void)iqKeyboardShowOrHide {
+    IQKeyboardManager *manager = [IQKeyboardManager sharedManager];
+    manager.enable = YES;
+    manager.shouldResignOnTouchOutside = YES;
+    manager.shouldToolbarUsesTextFieldTintColor = YES;
+    manager.enableAutoToolbar = NO;
+}
 
 @end
